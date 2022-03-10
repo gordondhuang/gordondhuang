@@ -44,3 +44,58 @@ a:hover{
 .body_section{
     
 }
+@media only screen and (min-width:800px) and (max-width:1000px) {
+    .header-text-section{
+        gap:10px;
+        padding-left:20px;
+    }
+    .header_text{
+        font-size:3vw;
+    }
+    .icons{
+        gap:30px;
+    }
+    .name{
+        font-size:5vw;
+    }
+    .slideshow_container{
+        height:auto;
+    }
+    .slideshow_img{
+        height:auto;
+    }
+}
+@media only screen and (min-width:300px) and (max-width:500px) {
+    .header-text-section{
+        gap:10px;
+        padding-left:20px;
+    }
+    .header_text{
+        font-size:3vw;
+    }
+    .icons{
+        gap:30px;
+        height:2vh;
+        width:2vh;
+    }
+    .name{
+        font-size:5vw;
+    }
+    .slideshow_container{
+        height: 500px;
+    }
+    .slideshow_img{
+        height: 500px;
+    }
+}
+#footer{
+    position:sticky;
+    width:100%;
+    height:100px;
+}
+.footer_text{
+    font-family: 'Playfair Display', serif;
+    color:white;
+    font-size:50px;
+    text-align: center;
+}
