@@ -19,7 +19,7 @@ a:hover{
     flex: row;
     flex-wrap: nowrap;
     text-align: center;
-    gap: 200px;
+    gap: 150px;
     float:left;
     padding-left:100px;
     padding-top:30px;
@@ -42,5 +42,5 @@ a:hover{
     width:30px;
 }
 .body_section{
-    
+
 }

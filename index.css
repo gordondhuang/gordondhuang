@@ -19,7 +19,7 @@ a:hover{
     flex: row;
     flex-wrap: nowrap;
     text-align: center;
-    gap: 200px;
+    gap: 150px;
     float:left;
     padding-left:100px;
     padding-top:30px;
@@ -116,4 +116,81 @@ a:hover{
     position: absolute;
     color:white;
     text-align: left;
+}
+@media only screen and (min-width:800px) and (max-width:1000px) {
+    .header-text-section{
+        gap:10px;
+        padding-left:20px;
+    }
+    .header_text{
+        font-size:3vw;
+    }
+    .icons{
+        gap:30px;
+    }
+    .name{
+        font-size:5vw;
+    }
+    .slideshow_container{
+        height:auto;
+    }
+    .slideshow_img{
+        height:auto;
+    }
+    .body_img{
+        border-radius: 35%;
+        width: 300px;
+        height: 400px;
+    }
+    .body_text_heading{
+        font-size:5vw;
+    }
+    .body_text{
+        font-size:2vw;
+    }
+    .about-me p{
+        display:block;
+        line-height: 8vw;
+    }
+}
+@media only screen and (min-width:300px) and (max-width:500px) {
+    .header-text-section{
+        gap:10px;
+        padding-left:20px;
+    }
+    .header_text{
+        font-size:3vw;
+    }
+    .icons{
+        gap:30px;
+        height:2vh;
+        width:2vh;
+    }
+    .name{
+        font-size:5vw;
+    }
+    .slideshow_container{
+        height: 500px;
+    }
+    .slideshow_img{
+        height: 500px;
+    }
+    .about-me{
+        padding-top:50px;
+    }
+    .body_img{
+        width: 160px;
+        height: 200px;
+        padding: 20px;
+    }
+    .body_text_heading{
+        font-size:5vw;
+    }
+    .body_text{
+        font-size:3vw;
+    }
+    .about-me p{
+        display:block;
+        line-height: 5vw;
+    }
 }
