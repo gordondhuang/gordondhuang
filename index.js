@@ -5,8 +5,11 @@ var slideshowImg = document.getElementsByClassName("slideshow_img");
 start();
 
 function start(){
+    update();
+}
+function update(){
     carousel();
-    slideshowImg.clientHeight = slideshow_container.clientHeight;
+    playOnce();
 }
 function carousel(){
     var i;
@@ -16,9 +19,13 @@ function carousel(){
     slideIndex++;
     if(slideIndex > slideshowImg.length) {slideIndex = 1}
     slideshowImg[slideIndex-1].style.display = "block";
+    slideshowImg[slideIndex-1].clientHeight = slideContainer.clientHeight;
     setTimeout(carousel, 10000); // change image every 10 seconds
 }
 
-function slideShowAni(){
-    
+function playOnce(){
+    if(slideContainer.clientHeight == 400){
+        slideContainer.style.animation.fill.mode == "forwards";
+    }
 }
+
