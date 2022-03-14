@@ -9,7 +9,6 @@ function start(){
 }
 function update(){
     carousel();
-    playOnce();
 }
 function carousel(){
     var i;
@@ -23,9 +22,4 @@ function carousel(){
     setTimeout(carousel, 10000); // change image every 10 seconds
 }
 
-function playOnce(){
-    if(slideContainer.clientHeight == 400){
-        slideContainer.style.animation.fill.mode == "forwards";
-    }
-}
 
