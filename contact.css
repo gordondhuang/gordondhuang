@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
 body{
     margin: 0px;
     background-color: black;
@@ -20,12 +21,13 @@ a:hover{
 }
 .header-text-section ul{
     display: flex;
+    padding-left:75px;
     padding-top:20px;
     padding-bottom:20px;
     flex: row;
     flex-wrap: nowrap;
     text-align: center;
-    gap: 150px;
+    gap: 200px;
     float:left;
 }
 .header-text-section li{
@@ -35,12 +37,99 @@ a:hover{
     padding:0;
 }
 .header_text{
-    font-family: 'Lato', sans-serif;
+    font-family: 'Playfair Display', serif;
     font-size: 20px;
     color:white;
 }
-.body_section{
-
+.hover-underline{
+    display: inline-block;
+    position: relative;
+}
+.hover-underline:hover:after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+.hover-underline:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1.5px;
+    bottom: 0;
+    left: 0;
+    background-color: #FFD700;
+    transform-origin: bottom right;
+    transition: transform 0.4s ease-out;
+}
+#contact_section{
+    
+}
+form{
+    padding-left:30%;
+    display:inline-block;
+    margin:auto;
+    width:800px;
+}
+.contactdiv{
+    margin-top:50px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:365px;
+}
+.contactdiv1{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:88px;
+}
+.contactdiv2{
+    margin-top:50px;
+}
+#contact-head{
+    text-align:center;
+    color:white;
+}
+label{ 
+    margin-bottom:10px;
+    display:block;
+    font-family: 'Playfair Display', serif;
+    color:white;
+}
+input[type=text]{
+    color:white;
+    display:block;
+    width:350px;
+    height:30px;
+    background-color:grey;
+    border:1px solid;
+    border-radius:10px;
+}
+#subject{
+    display:block;
+    width:100%;
+    height:200px;
+    color:white;
+    background-color:grey;
+    border:1px solid;
+    border-radius:10px;
+}
+input[type=submit]{
+    margin-top:10px;
+    display:block;
+    height:30px;
+    width:80px;
+    font-family: 'Playfair Display', serif;
+    font-size:15px;
+    background-color: grey;
+    border:1px solid;
+    border-radius:4px;
+}
+input[type=submit]:hover{
+    color:white;
+}
+::placeholder{
+    color:white;
 }
 @media only screen and (min-width:800px) and (max-width:1000px) {
     .header-text-section{
@@ -87,10 +176,12 @@ a:hover{
     }
 }
 #footer{
+    bottom:2px;
     overflow:hidden;
-    position:sticky;
+    position:absolute;
     width:100%;
-    margin-bottom:20px;
+    margin:0;
+    padding:0;
 }
 .icon-section{
     width:100%;

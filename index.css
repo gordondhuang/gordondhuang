@@ -258,8 +258,9 @@ a:hover{
         padding-bottom:100px;
     }
     #footer{
+        bottom:2px;
         overflow:hidden;
-        position:sticky;
+        position:absolute;
         width:100%;
         margin:0;
         padding:0;

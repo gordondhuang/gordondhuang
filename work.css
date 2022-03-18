@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
 body{
     margin: 0px;
     background-color: black;
@@ -20,12 +21,13 @@ a:hover{
 }
 .header-text-section ul{
     display: flex;
+    padding-left:75px;
     padding-top:20px;
     padding-bottom:20px;
     flex: row;
     flex-wrap: nowrap;
     text-align: center;
-    gap: 150px;
+    gap: 200px;
     float:left;
 }
 .header-text-section li{
@@ -35,9 +37,29 @@ a:hover{
     padding:0;
 }
 .header_text{
-    font-family: 'Lato', sans-serif;
+    font-family: 'Playfair Display', serif;
     font-size: 20px;
     color:white;
+}
+.hover-underline{
+    display: inline-block;
+    position: relative;
+}
+.hover-underline:hover:after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+.hover-underline:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1.5px;
+    bottom: 0;
+    left: 0;
+    background-color: #FFD700;
+    transform-origin: bottom right;
+    transition: transform 0.4s ease-out;
 }
 #body_section{
     margin:0;
@@ -93,10 +115,12 @@ a:hover{
     }
 }
 #footer{
+    bottom:2px;
     overflow:hidden;
-    position:sticky;
+    position:absolute;
     width:100%;
-    margin-bottom:20px;
+    margin:0;
+    padding:0;
 }
 .icon-section{
     width:100%;
