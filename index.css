@@ -12,7 +12,7 @@ a:hover{
     text-decoration: none;
     color:#FFD700;
 }
-#header{
+header{
     overflow:hidden;
     position:sticky;
 }
@@ -131,13 +131,14 @@ a:hover{
     text-align: left;
 }
 .body_img{
-    border-radius: 35%;
-    width: 800px;
-    height: 1000px;
+    border-radius: 40%;
+    width: 700px;
+    height: 800px;
     image-rendering: crisp-edges;
     float: right;
     vertical-align: top;
-    padding: 80px;
+    margin: 80px;
+    object-fit:cover;
 }
 .about-me{
     padding-top: 100px;
@@ -152,9 +153,9 @@ a:hover{
     margin-right: 0px;
 
 }
-#footer{
+footer{
     overflow:hidden;
-    position:sticky;
+    position:relative;
     width:100%;
     padding-top:20px;
     padding-bottom:20px;
@@ -257,7 +258,7 @@ a:hover{
     .about-me{
         padding-bottom:100px;
     }
-    #footer{
+    footer{
         bottom:2px;
         overflow:hidden;
         position:absolute;
@@ -341,9 +342,9 @@ a:hover{
     .about-me{
         padding-bottom:100px;
     }
-    #footer{
+    footer{
         overflow:hidden;
-        position:sticky;
+        position:relative;
         width:100%;
         margin:0;
         padding:0;
@@ -413,9 +414,9 @@ a:hover{
     .about-me{
         padding-bottom:100px;
     }
-    #footer{
+    footer{
         overflow:hidden;
-        position:sticky;
+        position:relative;
         width:100%;
         margin:0;
         padding:0;
