@@ -6,9 +6,8 @@ function header() {
     <nav class="header-text-section">
         <ul>
             <li class="header_text"><a class="hover-underline" href="index.html">Home</a></li>
-            <li class="header_text"><a class="hover-underline" href="work.html">Work</a></li>
+            <li class="header_text"><a class="hover-underline" href="projects.html">Projects</a></li>
             <li class="header_text"><a class="hover-underline" href="contact.html">Contact</li></a>
-            <li class="header_text"><a class="hover-underline" href="food.html">Food</li></a>
         </ul>
     </nav>
     `

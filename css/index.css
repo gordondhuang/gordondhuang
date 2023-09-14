@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
 body{
     margin: 0px;
-    background-color: black;
+    background-color: #FFE6CC;
 }
 a{
     color:White;
@@ -15,9 +15,6 @@ a:hover{
 header{
     overflow:hidden;
     position:sticky;
-}
-.header-text-section{
-    
 }
 .header-text-section ul{
     display: flex;
