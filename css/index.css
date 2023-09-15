@@ -1,68 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
-body{
-    margin: 0px;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,900;1,700&display=swap');
+:root {
+    margin: 0;
+    padding: 0;
     background-color: #FFE6CC;
+    --primary-color: hsl(14, 53%, 22%);
+    text-decoration: var(--primary-color);
+    overflow-x: hidden;
 }
-a{
-    color:White;
-    text-decoration: none;
-}
-a:hover{
-    text-decoration: none;
-    color:#FFD700;
-}
-header{
-    overflow:hidden;
-    position:sticky;
-}
-.header-text-section ul{
-    display: flex;
-    padding-left:75px;
-    padding-top:20px;
-    padding-bottom:20px;
-    flex: row;
-    flex-wrap: nowrap;
-    text-align: center;
-    gap: 200px;
-    float:left;
-}
-.header-text-section li{
-    list-style-type: none;
-    display:inline;
-    margin:0;
+body {
     padding:0;
+    margin:0;
 }
-.header_text{
-    font-family: 'Playfair Display', serif;
-    font-size: 20px;
-    color:white;
+body::-webkit-scrollbar {
+    width: 1rem;
 }
-.hover-underline{
-    display: inline-block;
-    position: relative;
+
+body::-webkit-scrollbar-track {
+    background: var(--primary-color);
 }
-.hover-underline:hover:after{
-    transform: scaleX(1);
-    transform-origin: bottom left;
+
+body::-webkit-scrollbar-thumb {
+    background:#8DA6AF;
+    border-radius:2rem;
 }
-.hover-underline:after{
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 1.5px;
-    bottom: 0;
-    left: 0;
-    background-color: #FFD700;
-    transform-origin: bottom right;
-    transition: transform 0.4s ease-out;
+header {
+
 }
-.slideshow_container{
-    top: 0; right: 0; bottom: 0; left: 0;
+main {
+    
+}
+#header-name {
+
+}
+a {
+    color:var(--primary-color);
+    text-decoration: none;
+}
+.slideshow_container {
     display: block;
     height:900px;
-    width:auto;
+    width:100vw;
     animation-direction: normal;
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
@@ -70,17 +49,17 @@ header{
     animation-duration: 2s;
     animation-delay: 1s;
 }
-.slideshow_container:hover{
+.slideshow_container:hover {
     animation-play-state: running;
 }
-.slideshow_img{
+.slideshow_img {
     height: inherit;
     opacity: 40%;
     object-fit: cover;
-    width: 100%;
+    width: 100vw;
     image-rendering: crisp-edges;
 }
-@keyframes imageSlide{
+@keyframes imageSlide {
     from {
         opacity:0;
         padding-bottom:-900px;
@@ -92,7 +71,7 @@ header{
         height:400px;
     }
 }
-#name{
+#name {
     margin:0;
     top: 50%;
     left: 50%;
@@ -102,81 +81,14 @@ header{
     font-weight:lighter;
     display: block;
     font-size: 85px;
-    color:white;
+    color:black;
     text-align: center;
 }
-#name-wrapper{
+#name-wrapper {
     position:absolute;
-    width:100%;
+    width:100vw;
     height:inherit;
 }
-.body_text_heading{
-    font-weight: normal;
-    font-weight:100;
-    font-family: 'Playfair Display', serif;
-    font-size: 60px;
-    color:white;
-    padding-left: 10%;
-    text-align: left;
-}
-.body_text{
-    font-weight:100;
-    font-family: 'Playfair Display', serif;
-    font-size: 20px;
-    padding-left: 10%;
-    color:white;
-    text-align: left;
-}
-.body_img{
-    border-radius: 40%;
-    width: 700px;
-    height: 800px;
-    image-rendering: crisp-edges;
-    float: right;
-    vertical-align: top;
-    margin: 80px;
-    object-fit:cover;
-}
-.about-me{
-    padding-top: 100px;
-    padding-bottom:675px;
-}
-.about-me p{
-    display:block;
-    line-height: 3em;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
-
-}
-footer{
-    overflow:hidden;
-    position:relative;
-    width:100%;
-    padding-top:20px;
-    padding-bottom:20px;
-}
-.icon-section{
-    width:100%;
-    margin:0;
-    padding:0;
-}
-.icon-section ul{
-    margin:0;
-    padding-right:30px;
-    float:Right;
-    display: flex;
-    flex: row;
-    flex-wrap: nowrap;
-    text-align: center;
-    gap: 20px;
-}
-.icon-section li{
-    list-style-type: none;
-    display:inline-block;
-}
-.icons{
-    height:20px;
-    width:20px;
-}
+footer {
+    
+} 

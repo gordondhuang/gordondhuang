@@ -3,11 +3,9 @@ function header() {
 
     navContainer.innerHTML = `
     
-    <nav class="header-text-section">
+    <nav>
         <ul>
-            <li class="header_text"><a class="hover-underline" href="index.html">Home</a></li>
-            <li class="header_text"><a class="hover-underline" href="projects.html">Projects</a></li>
-            <li class="header_text"><a class="hover-underline" href="contact.html">Contact</li></a>
+            <strong>GH<strong>
         </ul>
     </nav>
     `
