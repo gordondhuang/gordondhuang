@@ -1,17 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,900;1,700&display=swap');
 :root {
     margin: 0;
     padding: 0;
-    background-color: #FFE6CC;
     --primary-color: hsl(14, 53%, 22%);
+    --secondary-color:#FFE6CC;
     text-decoration: var(--primary-color);
+    background-color: var(--secondary-color);
     overflow-x: hidden;
 }
 body {
-    padding:0;
-    margin:0;
+    padding: 0;
+    margin: 0;
 }
 body::-webkit-scrollbar {
     width: 1rem;
@@ -23,14 +23,16 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
     background:#AD9387;
-    border-radius:2rem;
+    border-radius: 2rem;
 }
 header {
-    
+    margin:1rem;
 }
 #website-name{
+    font-family: 'Playfair Display', serif;
+    padding-left: 1rem;
     color: var(--primary-color);
-    font-size:40px;
+    font-size: 40px;
 }
 main {
     
@@ -39,13 +41,13 @@ main {
 
 }
 a {
-    color:var(--primary-color);
+    color: var(--primary-color);
     text-decoration: none;
 }
-.slideshow_container {
+#slideshow_container {
     display: block;
-    height:900px;
-    width:100vw;
+    height: 900px;
+    width: 100vw;
     animation-direction: normal;
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
@@ -65,14 +67,14 @@ a {
 }
 @keyframes imageSlide {
     from {
-        opacity:0;
-        padding-bottom:-900px;
-        height:900px;
+        opacity: 0;
+        padding-bottom: -900px;
+        height: 900px;
     }
     to {
-        opacity:1;
+        opacity: 1;
         padding-bottom:-400px;
-        height:400px;
+        height: 400px;
     }
 }
 #name {
@@ -82,16 +84,32 @@ a {
     transform: translate(-50%, -50%);
     position: absolute;
     font-family: 'Playfair Display', serif;
-    font-weight:lighter;
+    font-weight: lighter;
     display: block;
     font-size: 85px;
     color:black;
     text-align: center;
 }
 #name-wrapper {
-    position:absolute;
-    width:100vw;
-    height:inherit;
+    margin:0;
+    position: absolute;
+    width: 100vw;
+    height: inherit;
+}
+#about-section{
+    padding-top:5vh;
+    padding-bottom:20vh;
+    background-color: var(--primary-color);
+}
+#about-text-highlight{
+    display:inline-block;
+    color: var(--secondary-color);
+    font-family: 'Montserrat';
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-left:16em;
+    margin-right:16em;
+    line-height:1.6;
 }
 footer {
     
