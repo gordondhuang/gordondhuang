@@ -5,7 +5,7 @@ function header() {
     
     <nav>
         <ul>
-            <strong>GH<strong>
+            <span id="website-name"><a href="index.html">GH</a></span>
         </ul>
     </nav>
     `

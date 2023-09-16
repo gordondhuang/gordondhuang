@@ -18,15 +18,19 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-    background: var(--primary-color);
+    background: #FAE5DC;
 }
 
 body::-webkit-scrollbar-thumb {
-    background:#8DA6AF;
+    background:#AD9387;
     border-radius:2rem;
 }
 header {
-
+    
+}
+#website-name{
+    color: var(--primary-color);
+    font-size:40px;
 }
 main {
     
