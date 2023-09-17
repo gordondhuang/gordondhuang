@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,900;1,700&display=swap');
+:root {
+    margin: 0;
+    padding: 0;
+    --primary-color: #54281A;
+    --secondary-color:#FFE6CC;
+    text-decoration: var(--primary-color);
+    background-color: var(--secondary-color);
+    overflow-x: hidden;
+}
+body {
+    padding: 0;
+    margin: 0;
+}
+body::-webkit-scrollbar {
+    width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: #FAE5DC;
+}
+
+body::-webkit-scrollbar-thumb {
+    background:#AD9387;
+    border-radius: 1rem;
+}
+header {
+    margin:1rem;
+}
+#website-name{
+    font-family: 'Playfair Display', serif;
+    padding-left: 1rem;
+    color: var(--primary-color);
+    font-size: 40px;
+}
+main {
+    
+}
+a {
+    color:white;
+    text-decoration: none;
+}
+footer {
+    display:inline-block;
+    width:100vw;
+    background-color: #8DA6AF;
+    font-family: 'Montserrat';
+} 
+#footer-sections {
+    margin-top: 3rem;
+    margin-left: 25rem;
+    margin-right: 25rem;
+    margin-bottom: 3rem;
+    display:flex;
+    justify-content: space-between;
+    align-items: top;
+}
+.footer-heading {
+    color:white;
+    font-size: 1rem;
+    font-weight: bolder;
+    margin-bottom:3rem;
+}
+#social-media-section {
+    width:fit-content;
+    margin:0;
+    padding:0;
+}
+#social-media-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.social-media {
+    font-size: 0.75rem;
+    padding-bottom: 2rem;
+    font-weight:lighter;
+}
+#contact-section {
+    width:fit-content;
+    margin:0;
+    padding:0;
+}

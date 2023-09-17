@@ -4,7 +4,7 @@ function header() {
     navContainer.innerHTML = `
     
     <nav>
-        <span id="website-name"><a href="index.html">GH</a></span>
+        <a href="index.html" id="website-name">GH</a>
     </nav>
     `
     
