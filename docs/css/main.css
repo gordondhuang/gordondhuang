@@ -44,13 +44,13 @@ a {
 footer {
     display:inline-block;
     width:100vw;
-    background-color: #8DA6AF;
+    background-color: black;
     font-family: 'Montserrat';
 } 
 #footer-sections {
     margin-top: 3rem;
-    margin-left: 25rem;
-    margin-right: 25rem;
+    margin-left: 10rem;
+    margin-right: 15rem;
     margin-bottom: 3rem;
     display:flex;
     justify-content: space-between;
@@ -60,7 +60,10 @@ footer {
     color:white;
     font-size: 1rem;
     font-weight: bolder;
-    margin-bottom:3rem;
+    margin-bottom: 3rem;
+    margin-right: 100%;
+    width: 100%;
+    line-height: 1.5rem;
 }
 #social-media-section {
     width:fit-content;
@@ -81,4 +84,18 @@ footer {
     width:fit-content;
     margin:0;
     padding:0;
+}
+#contact-me-button { 
+    margin-top: 2rem;
+    width:7rem;
+    height:2rem;
+    font-weight: bolder;
+    font-size: 1rem;
+    background-color: transparent;
+    border-style: solid;
+    border-color: white;
+    color:white;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
 }
