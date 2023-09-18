@@ -1,7 +1,7 @@
 #slideshow_container {
     display: block;
     height: 100vh;
-    width: 100vw;
+    width: auto;
     animation-direction: normal;
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
