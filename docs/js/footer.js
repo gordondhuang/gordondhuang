@@ -3,7 +3,7 @@ function footer(){
 
     footerContainer.innerHTML = `
 
-    <div id="footer-sections">
+    <nav id="footer-sections">
         <div id="social-media-section">
             <ul id="social-media-list">
             <li class="footer-heading">Follow me on social media:</li>
@@ -16,8 +16,10 @@ function footer(){
             <span class="footer-heading">Need to follow up through email?:</span>
             <button id="contact-me-button" onclick="location.href='./contact.html'">Contact me</button>
         </div>
+    </nav>
+    <div>
+        <span id="copyright-information"></span>
     </div>
-
     `
 
     let body = document.querySelector('body')

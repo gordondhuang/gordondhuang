@@ -2,6 +2,9 @@
 
 ### Welcome to the repository of my personal website. I designed and created this website as a fun project and as way to display my skills in html, css, and javascript.
 
+## 🚀 About Me
+I'm an undergraduate computer science student at the University of Washington.
+
 <!--
 **GordonDHuang/gordondhuang** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
