@@ -26,33 +26,51 @@ body::-webkit-scrollbar-thumb {
     border-radius: 1rem;
 }
 header {
-    margin:1rem;
+    margin-bottom:1vh;
+}
+#navigation{
+    display: flex;
+    justify-content: space-between;
 }
 #website-name{
+    display: inline-flex;
+    vertical-align: center;
+    align-self:center;
     font-family: 'Playfair Display', serif;
-    padding-left: 1rem;
+    margin-left: 1rem;
     color: var(--primary-color);
-    font-size: 40px;
-}
-main {
-    
+    font-size: 2.5rem;
 }
 a {
     color:white;
     text-decoration: none;
 }
+#menu-nav-button {
+    display: inline-flex;
+    margin-right: 1rem;
+    padding: 0;
+    align-self:center;
+    background-color: transparent;
+    border: none;
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+}
+#menu-bar-icon {
+    
+}
 footer {
-    display:inline-block;
-    width:100vw;
+    display: inline-block;
+    width: 100vw;
     background-color: black;
     font-family: 'Montserrat';
 } 
 #footer-sections {
     margin-top: 5vh;
     margin-left: 10vw;
-    margin-right: 15vw;
+    margin-right: 10vw;
     margin-bottom: 4vh;
-    display:flex;
+    display: flex;
     justify-content: space-between;
     align-items: top;
 }
@@ -65,30 +83,35 @@ footer {
     width: 100%;
     line-height: 1.5rem;
 }
-#social-media-section {
-    width:fit-content;
-    margin:0;
-    padding:0;
-}
-#social-media-list {
+.footer-list {
     list-style: none;
     margin: 0;
     padding: 0;
 }
-.social-media {
-    font-size: 0.75rem;
-    padding-bottom: 3vh;
-    font-weight:lighter;
+#social-media-section {
+    width: fit-content;
+    margin: 0;
+    padding: 0;
+}
+#navigation-links-section {
+    width: fit-content;
+    margin: 0;
+    padding: 0;
 }
 #contact-section {
-    width:fit-content;
-    margin:0;
-    padding:0;
+    width: fit-content;
+    margin: 0;
+    padding: 0;
+}
+.footer-list-item {
+    font-size: 0.75rem;
+    padding-bottom: 3vh;
+    font-weight: lighter;
 }
 #contact-me-button { 
     margin-top: 2vh;
-    width:7rem;
-    height:2rem;
+    width: 7rem;
+    height: 2rem;
     font-weight: bolder;
     font-size: 1rem;
     background-color: transparent;

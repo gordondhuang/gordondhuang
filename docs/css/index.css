@@ -49,7 +49,7 @@
     padding-top:5vh;
     padding-bottom:10vh;
     padding-left:25vw;
-    padding-right:20vw;
+    padding-right:24vw;
     background-color: var(--primary-color);
 }
 #about-text-highlight{
@@ -107,11 +107,11 @@
     padding-bottom:8vh;
     padding-left:10vw;
     padding-right:10vw;
-    background-color: #4B6611;
+    background-color: #44624a;
 }
 #projects-text-highlight {
     display:inline-block;
-    color: #FFE6CC;
+    color: #f1ebe1;
     font-family: 'Montserrat';
     font-size: 2rem;
     font-weight: bolder;
@@ -125,12 +125,15 @@
     font-family: 'Montserrat';
     font-weight: bolder;
     font-size: 1.2rem;
-    background-color: #74B32D;
+    background-color: #8ba888;
     border-style: none;
     border-color: white;
-    color: #FFE6CC;
+    color: #f1ebe1;
     text-align: center;
     text-decoration: none;
     cursor: pointer;
     transition: opacity 500ms;
+}
+#projects-button:hover {
+    opacity:0.2;
 }
