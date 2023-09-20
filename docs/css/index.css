@@ -107,11 +107,11 @@
     padding-bottom:8vh;
     padding-left:10vw;
     padding-right:10vw;
-    background-color: #44624a;
+    background-color: #283618;
 }
 #projects-text-highlight {
     display:inline-block;
-    color: #f1ebe1;
+    color: #fefae0;
     font-family: 'Montserrat';
     font-size: 2rem;
     font-weight: bolder;
@@ -125,10 +125,10 @@
     font-family: 'Montserrat';
     font-weight: bolder;
     font-size: 1.2rem;
-    background-color: #8ba888;
+    background-color: #606c38;
     border-style: none;
     border-color: white;
-    color: #f1ebe1;
+    color: #fefae0;
     text-align: center;
     text-decoration: none;
     cursor: pointer;

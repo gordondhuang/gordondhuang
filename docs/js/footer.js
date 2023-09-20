@@ -29,7 +29,7 @@ function footer(){
         </section>
     </nav>
     <div>
-        <span id="copyright-information"></span>
+        <span id="copyright-information">Copyright © 2023 Gordon Huang</span>
     </div>
     `
 

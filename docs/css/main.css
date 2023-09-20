@@ -3,8 +3,8 @@
 :root {
     margin: 0;
     padding: 0;
-    --primary-color: #54281A;
-    --secondary-color:#FFE6CC;
+    --primary-color: #432818;
+    --secondary-color:#fefae0;
     text-decoration: var(--primary-color);
     background-color: var(--secondary-color);
     overflow-x: hidden;
@@ -34,8 +34,6 @@ header {
 }
 #website-name{
     display: inline-flex;
-    vertical-align: center;
-    align-self:center;
     font-family: 'Playfair Display', serif;
     margin-left: 1rem;
     color: var(--primary-color);
@@ -47,6 +45,7 @@ a {
 }
 #menu-nav-button {
     display: inline-flex;
+    margin-top:0.4rem;
     margin-right: 1rem;
     padding: 0;
     align-self:center;
@@ -125,4 +124,8 @@ footer {
 }
 #contact-me-button:hover {
     opacity: 0.2;
+}
+#copyright-information {
+    font-size:0.65rem;
+    color:white;
 }
