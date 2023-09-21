@@ -1,8 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,900;1,700&display=swap');
+main{
+    background-color: #606c38;
+    font-family:'Montserrat';
+    color:#fefae0;
+    text-align: center;
+    padding-top:10vh;
+}
 #contact-form {
-    
+    font-size: 1rem;
+    padding-bottom:30vh;
+}
+input {
+    border:none;
 }
 #name {
-
+    
 }
 
 #email {
@@ -11,4 +23,13 @@
 
 #subject {
 
+}
+
+#submit-button {
+    font-family: 'Montserrat';
+    background-color:#432818;
+    color:#fefae0;
+    border-radius:2rem;
+    width:8rem;
+    height:2rem;
 }
