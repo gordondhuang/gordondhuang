@@ -1,6 +1,6 @@
-var slideIndex = 0;
+let slideIndex = 0;
 const SLIDE_CONTAINER = document.getElementsByClassName("slideshow_container");
-var slideshowImg = document.getElementsByClassName("slideshow_img");
+let slideshowImg = document.getElementsByClassName("slideshow_img");
 start();
 
 function start(){
@@ -10,7 +10,7 @@ function update(){
     carousel();
 }
 function carousel(){
-    var i;
+    let i;
     for(i = 0; i < slideshowImg.length; i++){
         slideshowImg[i].style.display = "none";
     }

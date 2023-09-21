@@ -14,22 +14,24 @@
 </head>
 <body>
     <main>
-        <h1>Contact Me</h1>
-        <form action="https://formsubmit.co/gordondhuang@gmail.com" method="POST" id="contact-form">
-            <label for="name">Full Name:</label>
-            <input type="text" id="name" name="name" placeholder="Full Name">
-            <br><br>
-            <label for="email">Email:</label>
-            <input type="text" id="email" name="email" placeholder="Email">
-            <br><br>
-            <label for="subject">Subject:</label>
-            <input type="text" id="subject" name="subject" placeholder="Subject">
-            <br><br>
-            <label for="message">Message:</label>
-            <textarea type="text" id="message" name="message" placeholder="Message"></textarea>
-            <br><br>
-            <input type="submit" id="submit-button" value="Submit">
-        </form>
+        <h1 style="text-align:center">Contact Me</h1>
+        <section id="contact-section">
+            <form action="https://formsubmit.co/79ae5b60170a63cebb1157977c6b7824" method="POST" id="contact-form">
+                <label for="name">Full Name:*</label>
+                <input type="text" class="form-input" id="name" name="name" placeholder="Full Name" required="true">
+                <br><br>
+                <label for="email">Email:*</label>
+                <input type="text" class="form-input" id="email" name="email" placeholder="Email" required="true">
+                <br><br>
+                <label for="subject">Subject:*</label>
+                <input type="text" class="form-input" id="subject" name="subject" placeholder="Subject" required="true">
+                <br><br>
+                <label for="message">Message:*</label>
+                <textarea type="text" id="message" id="message" name="message" placeholder="Enter Here.." required="true"></textarea>
+                <br><br>
+                <input type="submit" id="submit-button" value="Submit">
+            </form>
+        </section>
     </main>
 </body>
 </html>
