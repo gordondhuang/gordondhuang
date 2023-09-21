@@ -43,6 +43,7 @@ textarea {
     border: none;
     width: 8rem;
     height: 2rem;
+    cursor: pointer;
 }
 .required-symbol {
     color:red;
