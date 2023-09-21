@@ -17,19 +17,20 @@
         <h1 style="text-align:center">Contact Me</h1>
         <section id="contact-section">
             <form action="https://formsubmit.co/79ae5b60170a63cebb1157977c6b7824" method="POST" id="contact-form">
-                <label for="name">Full Name:*</label>
+                <label for="name">Full Name:<span class="required-symbol">*</span></label>
                 <input type="text" class="form-input" id="name" name="name" placeholder="Full Name" required="true">
                 <br><br>
-                <label for="email">Email:*</label>
+                <label for="email">Email:<span class="required-symbol">*</span></label>
                 <input type="text" class="form-input" id="email" name="email" placeholder="Email" required="true">
                 <br><br>
-                <label for="subject">Subject:*</label>
+                <label for="subject">Subject:<span class="required-symbol">*</span></label>
                 <input type="text" class="form-input" id="subject" name="subject" placeholder="Subject" required="true">
                 <br><br>
-                <label for="message">Message:*</label>
+                <label for="message">Message:<span class="required-symbol">*</span></label>
                 <textarea type="text" id="message" id="message" name="message" placeholder="Enter Here.." required="true"></textarea>
                 <br><br>
                 <input type="submit" id="submit-button" value="Submit">
+                <input type="hidden" name="_next" value="./thankyou.html">
             </form>
         </section>
     </main>
