@@ -87,6 +87,28 @@ footer {
     margin: 0;
     padding: 0;
 }
+a:hover {
+    opacity: 0.5;
+}
+button:hover {
+    animation-name: animate-button;
+    animation-direction: normal;
+    animation-play-state: paused;
+    animation-duration: 800ms;
+    animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    opacity: 1;
+}
+@keyframes animate-button{
+    from {
+        opacity:1;
+    }
+    to {
+        opacity:0.3;
+    }
+}
+
 #social-media-section {
     width: fit-content;
     margin: 0;
@@ -123,7 +145,7 @@ footer {
     transition: opacity 500ms;
 }
 #contact-me-button:hover {
-    opacity: 0.2;
+    opacity: 0.3;
 }
 #copyright-information {
     font-size:0.65rem;

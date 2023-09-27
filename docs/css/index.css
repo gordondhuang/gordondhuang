@@ -1,13 +1,14 @@
 #slideshow_container {
     display: block;
     height: 100vh;
-    width: auto;
+    width: 100%;
     animation-direction: normal;
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
     animation-name: imageSlide;
     animation-duration: 2s;
-    animation-delay: 1s;
+    animation-delay: 500ms;
 }
 .slideshow_img {
     height: inherit;
@@ -35,7 +36,7 @@
     font-family: 'Playfair Display', serif;
     font-weight: lighter;
     display: block;
-    font-size: 85px;
+    font-size: 6rem;
     color:black;
     text-align: center;
 }
@@ -51,6 +52,10 @@
     padding-left:25vw;
     padding-right:24vw;
     background-color: var(--primary-color);
+}
+#uw {
+    color: #502484; 
+    background-color: #b7a57a;
 }
 #about-text-highlight{
     display:inline-block;
@@ -76,31 +81,16 @@
     cursor: pointer;
     transition: opacity 500ms;
 }
-#about-button:hover {
-    opacity: 0.2;
-}
-#main-display-section {
-    display:flex;
-}
 #portrait-section {
     flex:1;
     margin:0;
-    width:50rem;
-    height:60rem;
+    width:30rem;
+    height:40rem;
 }
 #portrait-photo {
     object-fit:cover;
     width:100%;
     height:100%;
-}
-#services-section {
-    flex:2;
-    height:60rem;
-    width:40rem;
-    margin:0;
-}
-#services-text {
-    margin-left:5rem;
 }
 #projects-section {
     padding-top:5vh;
@@ -133,7 +123,4 @@
     text-decoration: none;
     cursor: pointer;
     transition: opacity 500ms;
-}
-#projects-button:hover {
-    opacity:0.2;
 }
