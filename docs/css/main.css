@@ -51,7 +51,7 @@ footer {
     background-color: black;
     font-family: 'Montserrat';
 } 
-#sideNav{
+#sideNav {
     position:fixed;
     height: 100%;
     width: 0;
@@ -59,23 +59,26 @@ footer {
     right: 0;
     z-index: 1;
     transition:0.5s;
-    background-color:black;
+    background-color:var(--secondary-color);
     overflow-x: hidden;
 }
-#sideNav-list{
+#sideNav-list {
+    padding-top: 5rem;
     display: flex;
-    flex-direction:column;
-
+    flex-direction: column;
+    list-style-type: none;
+    gap: 5rem;
 }
-
-#sideNav a {
+.sideNav-list-item a {
+    color:var(--primary-color);
     font-family: 'Montserrat';
+    font-size:2rem;
 }
-#navigation{
+#navigation {
     display: flex;
     justify-content: space-between;
 }
-#website-name{
+#website-name {
     display: inline-flex;
     font-family: 'Playfair Display', serif;
     margin-left: 1rem;
@@ -93,6 +96,7 @@ footer {
     width: 2.5rem;
     height: 2.5rem;
     cursor: pointer;
+    z-index: 2;
 }
 #menu-bar-icon {
     

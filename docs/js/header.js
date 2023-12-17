@@ -13,10 +13,10 @@ function header() {
     </nav>
     <section id="sideNav">
         <ul id="sideNav-list">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-            <li><a href="./projects.html">Projects</a></li>
+            <li class="sideNav-list-item"><a href="./index.html">Home</a></li>
+            <li class="sideNav-list-item"><a href="./about.html">About</a></li>
+            <li class="sideNav-list-item"><a href="./contact.html">Contact</a></li>
+            <li class="sideNav-list-item"><a href="./projects.html">Projects</a></li>
         </ul>
     </section>
     `
@@ -28,9 +28,9 @@ function header() {
 function toggleNavBar(){
     let sideMenu = document.getElementById("sideNav");
     let navBtn = document.getElementById("menu-nav-button");
-    navBtn.style.zIndex = 1;
-    sideMenu.style.width = sideMenu.style.width === "20vw" ? 0 : "20vw";
-    sideMenu.style.marginLeft = sideMenu.style.mari === "20vw" ? 0 : "20vw";
+    let background = document.querySelector('main');
+    background.style.opacity = background.style.opacity === "0.2" ? "1" : "0.2"; 
+    sideMenu.style.width = sideMenu.style.width === "20vw" ? "0" : "20vw";
 }
 
 header();
