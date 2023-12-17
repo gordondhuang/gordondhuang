@@ -11,20 +11,21 @@
     animation-delay: 500ms;
 }
 .slideshow_img {
+    aspect-ratio: 1;
     height: inherit;
     opacity: 40%;
     object-fit: cover;
-    width: 100vw;
+    width: 100%;
     image-rendering: crisp-edges;
 }
 @keyframes imageSlide {
     from {
-        padding-bottom: -90vh;
         height: 90vh;
+        padding-bottom: -90vh;
     }
     to {
-        padding-bottom:-50vh;
         height: 50vh;
+        padding-bottom:-50vh;
     }
 }
 #name {
@@ -98,6 +99,7 @@
     justify-content: center;
 }
 #portrait-photo {
+    aspect-ratio: 1/1;
     display: block;
     position: relative;
     width: 8rem;
