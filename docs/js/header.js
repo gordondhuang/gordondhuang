@@ -2,7 +2,7 @@ function header() {
     let navContainer = document.createElement('header')
 
     navContainer.innerHTML = `
-    
+
     <nav id="navigation">
         <a href="index.html" id="website-name">GH</a>
         <button type="button" id="menu-nav-button">
@@ -11,10 +11,26 @@ function header() {
             </svg>
         </button>
     </nav>
+    <section id="sideNav">
+        <ul id="sideNav-list">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./projects.html">Projects</a></li>
+        </ul>
+    </section>
     `
-    
     let body = document.querySelector('body')
     body.insertBefore(navContainer, body.firstChild)
+    document.getElementById("menu-nav-button").addEventListener("click", toggleNavBar);
+}
+
+function toggleNavBar(){
+    let sideMenu = document.getElementById("sideNav");
+    let navBtn = document.getElementById("menu-nav-button");
+    navBtn.style.zIndex = 1;
+    sideMenu.style.width = sideMenu.style.width === "20vw" ? 0 : "20vw";
+    sideMenu.style.marginLeft = sideMenu.style.mari === "20vw" ? 0 : "20vw";
 }
 
 header();

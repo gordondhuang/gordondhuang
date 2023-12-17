@@ -54,8 +54,11 @@
     background-color: var(--primary-color);
 }
 #uw {
-    color: #502484; 
+    color:var(--secondary-color);
+}
+#uw:hover{
     background-color: #b7a57a;
+    color: #502484; 
 }
 #about-text-highlight{
     display:inline-block;
@@ -81,16 +84,30 @@
     cursor: pointer;
     transition: opacity 500ms;
 }
+#main-display-section{
+    width:100%;
+    height:30vh;
+}
 #portrait-section {
-    flex:1;
+    display:flex;
     margin:0;
-    width:30rem;
-    height:40rem;
+    padding:0;
+    width:20vw;
+    height:inherit;
+    align-items: center;
+    justify-content: center;
 }
 #portrait-photo {
-    object-fit:cover;
-    width:100%;
-    height:100%;
+    display: block;
+    position: relative;
+    width: 8rem;
+    height: inherit;
+}
+#exposition-section{
+    display:inline-block;
+    margin:0;
+    width:auto;
+    height:inherit;
 }
 #projects-section {
     padding-top:5vh;
