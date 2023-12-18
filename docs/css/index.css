@@ -17,6 +17,7 @@
     object-fit: cover;
     width: 100%;
     image-rendering: crisp-edges;
+    display: none;
 }
 @keyframes imageSlide {
     from {
@@ -89,7 +90,7 @@
     width:100%;
     height:30vh;
 }
-#portrait-section {
+#skills-section {
     display:flex;
     margin:0;
     padding:0;
@@ -97,19 +98,6 @@
     height:inherit;
     align-items: center;
     justify-content: center;
-}
-#portrait-photo {
-    aspect-ratio: 1/1;
-    display: block;
-    position: relative;
-    width: 8rem;
-    height: inherit;
-}
-#exposition-section{
-    display:inline-block;
-    margin:0;
-    width:auto;
-    height:inherit;
 }
 #projects-section {
     padding-top:5vh;
