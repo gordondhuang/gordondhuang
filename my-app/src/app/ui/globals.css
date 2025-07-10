@@ -1,0 +1,193 @@
+@import "tailwindcss";
+@import url('satoshi.css');
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+body::-webkit-scrollbar {
+    width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: #FAE5DC;
+}
+
+body::-webkit-scrollbar-thumb {
+    background:#AD9387;
+    border-radius: 1rem;
+}
+header {
+    margin-bottom:1vh;
+}
+a {
+    color:white;
+    text-decoration: none;
+}
+a:hover {
+    opacity: 0.5;
+}
+button:hover {
+    animation-name: animate-button;
+    animation-direction: normal;
+    animation-play-state: paused;
+    animation-duration: 800ms;
+    animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    opacity: 1;
+}
+footer {
+    display: inline-block;
+    width: 100vw;
+    background-color: black;
+    font-family: 'Montserrat';
+} 
+#sideNav {
+    position:fixed;
+    height: 100%;
+    width: 0;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    transition:0.5s;
+    background-color:var(--secondary-color);
+    overflow-x: hidden;
+}
+#sideNav-list {
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    gap: 5rem;
+}
+.sideNav-list-item a {
+    color:var(--primary-color);
+    font-family: 'Montserrat';
+    font-size:2rem;
+}
+#navigation {
+    display: flex;
+    justify-content: space-between;
+}
+#website-name {
+    display: inline-flex;
+    font-family: 'Playfair Display', serif;
+    margin-left: 1rem;
+    color: var(--primary-color);
+    font-size: 2.5rem;
+}
+#menu-nav-button {
+    display: inline-flex;
+    margin-top:0.4rem;
+    margin-right: 1rem;
+    padding: 0;
+    align-self:center;
+    background-color: transparent;
+    border: none;
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+    z-index: 2;
+}
+
+#footer-sections {
+    margin-top: 5vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-bottom: 4vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+}
+.footer-heading {
+    color:white;
+    font-size: 1rem;
+    font-weight: bolder;
+    margin-bottom: 2vh;
+    margin-right: 100%;
+    width: 100%;
+    line-height: 1.5rem;
+}
+.footer-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+@keyframes animate-button{
+    from {
+        opacity:1;
+    }
+    to {
+        opacity:0.3;
+    }
+}
+
+#social-media-section {
+    width: fit-content;
+    margin: 0;
+    padding: 0;
+}
+#navigation-links-section {
+    width: fit-content;
+    margin: 0;
+    padding: 0;
+}
+#contact-section {
+    width: fit-content;
+    margin: 0;
+    padding: 0;
+}
+.footer-list-item {
+    font-size: 0.75rem;
+    padding-bottom: 3vh;
+    font-weight: lighter;
+}
+#contact-me-button { 
+    margin-top: 2vh;
+    width: 7rem;
+    height: 2rem;
+    font-weight: bolder;
+    font-size: 1rem;
+    background-color: transparent;
+    border-style: solid;
+    border-color: white;
+    color:white;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: opacity 500ms;
+}
+#contact-me-button:hover {
+    opacity: 0.3;
+}
+#copyright-information {
+    font-size:0.65rem;
+    color:white;
+}
