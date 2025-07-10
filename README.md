@@ -1,6 +1,6 @@
 # My Personal Website
 
-### Welcome to the repository of my personal website. I designed and created this website as a fun project and as way to display my skills in html, css, and javascript.
+### Welcome to the repository of my personal website. I designed and created this website as a fun project and as way to display my skills in html/css, javascript and more.
 
 ## 🚀 About Me
 I'm an undergraduate computer science student at the University of Washington.
