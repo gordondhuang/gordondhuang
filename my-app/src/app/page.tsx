@@ -1,15 +1,15 @@
 import Image from "next/image";
 
-export default function Home() {
+export default function Page() {
   return (
     <main>
        <section id="slideshow_container">
             <figure id="name-wrapper">
                 <h1 id="name">Gordon Huang</h1>
             </figure>
-            <img className="slideshow_img" width="1000" height="1000" alt="seattle" src="./images/seattle.jpg"/>
-            <img className="slideshow_img" width="1000" height="1000" alt="inside of the space needle" src="./images/seattle2.jpg"/>
-            <img className="slideshow_img" width="1000" height="1000" alt="pike place market" src="./images/seattle3.jpg"/>
+            <Image className="slideshow_img" width="1000" height="1000" alt="seattle" src="./images/seattle.jpg"/>
+            <Image className="slideshow_img" width="1000" height="1000" alt="inside of the space needle" src="./images/seattle2.jpg"/>
+            <Image className="slideshow_img" width="1000" height="1000" alt="pike place market" src="./images/seattle3.jpg"/>
         </section>
         <summary id="about-section">
             <p id="about-text-highlight">
@@ -30,7 +30,7 @@ export default function Home() {
             <p id="projects-text-highlight">
                 Check out all the projects that I have worked on that range from web development to virtual reality and more.
             </p>
-            <button id="projects-button" onClick={() =>"location.href='./projects.html'"}>
+            <button id="projects-button" onClick={() => "location.href='./projects.html'"}>
                 Go to projects
             </button>
         </summary>

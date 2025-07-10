@@ -1,5 +1,6 @@
-import type { Metadata } from "next";
-import '@/app/ui/global.css';
+import { Metadata } from "next";
+import '@/styles/globals.css';
+import Script from 'next/script';
 
 export const metadata: Metadata = {
   title: {
@@ -22,13 +23,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-    <head>
-        <link rel="stylesheet" href="./css/main.css"/>
-        <link rel="stylesheet" href="./css/about.css"/>
-        <script defer src="./js/header.js"></script>
-        <script defer src="./js/footer.js"></script>
-    </head>
-    <body>{children}</body>
+      <Script defer src="./js/header.js"></Script>
+      <Script defer src="./js/footer.js"></Script>
+      <body>{children}</body>
     </html>
   );
 }
