@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import '@/styles/globals.css';
+// import '@/styles/globals.css';
 import Script from 'next/script';
 
 export const metadata: Metadata = {
@@ -23,8 +23,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Script defer src="./js/header.js"></Script>
-      <Script defer src="./js/footer.js"></Script>
       <body>{children}</body>
     </html>
   );
