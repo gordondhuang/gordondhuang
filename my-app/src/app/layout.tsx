@@ -1,5 +1,7 @@
-import { Metadata } from "next";
-// import '@/styles/globals.css';
+import { Metadata, Viewport } from 'next';
+import '@/app/styles/globals.css';
+import { Nav } from '@/app/components/Nav';
+import { Footer } from '@/app/components/Footer';
 import Script from 'next/script';
 
 export const metadata: Metadata = {
@@ -8,13 +10,17 @@ export const metadata: Metadata = {
     default: 'Gordon Huang'
   },
   description: 'Welcome to my website!',
-  viewport: 'width=device-width, initial-scale=1.0',
   keywords: 'portfolio, computer science, university of washington, researcher, student, software engineer',
   authors: [{ name: 'Gordon Huang' }],
   creator: 'Gordon Huang',
   publisher: 'Gordon Huang',
   metadataBase: new URL('https://gordondhuang.me/')
 };
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1
+}
 
 export default function RootLayout({
   children,
@@ -23,7 +29,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Nav/>
+        {children}
+        <Footer/>
+      </body>
     </html>
   );
 }
