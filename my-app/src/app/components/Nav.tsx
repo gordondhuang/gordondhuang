@@ -4,10 +4,22 @@ import '@/app/styles/globals.css';
 export function Nav() {
     return (
         <nav>
-          <Link href='/pages/projects'>Projects</Link>
-          <Link href='/pages/contact'>Contact</Link>
-          <Link href='/pages/about'>About</Link>
-          <Link href='/'>Home</Link>
+          <div>
+            <ul id="nav-menu">
+              <li>
+                <Link href='/'>Home</Link>
+              </li>
+              <li>
+                <Link href='/pages/about'>About</Link>
+              </li>
+              <li>
+                <Link href='/pages/projects'>Projects</Link>
+              </li>
+              <li>
+                <Link href='/pages/contact'>Contact</Link>
+              </li>
+            </ul>
+          </div>
         </nav>
     )
 }

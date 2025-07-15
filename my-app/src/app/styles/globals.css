@@ -6,8 +6,27 @@
   --foreground: #171717;
   margin: 0;
   padding: 0;
+  width: 100%;
   overflow-x: hidden;
+  overflow-y: scroll;
+  scrollbar-gutter: stable;
   font-family: Satoshi-Regular;
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 @theme inline {
@@ -25,15 +44,17 @@
 }
 
 nav {
-    overflow:hidden
+  width: 100%;
+  overflow: hidden;
+  padding: 1.5rem;
 }
 
 nav a {
-    float: right;
-    text-align:center;
-    padding-top:1.5rem;
-    padding-right:12rem;
-    font-size: 1.5rem;
+  float: right;
+  text-align: center;
+  align-items: center;
+  font-size: 1.5rem;
+  padding: 1rem;
 }
 
 nav a:hover {
@@ -42,4 +63,41 @@ nav a:hover {
 
 nav a:active {
 
+}
+
+#nav-menu {
+  display: flex;
+  align-items: center;
+  float: right;
+  gap: 12rem;
+  margin-right: 6rem;
+}
+
+footer {
+  width: 100%;
+  overflow: hidden;
+  font-family: Satoshi-Light;
+}
+
+footer a {
+
+}
+
+footer a:hover {
+
+}
+
+footer a:active {
+
+}
+
+#footer-desc {
+  text-align: center;
+}
+
+#socials-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
 }
