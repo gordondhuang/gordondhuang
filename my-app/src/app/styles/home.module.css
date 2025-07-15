@@ -1,0 +1,31 @@
+@import url('@/app/assets/fonts/satoshi/Fonts/WEB/css/satoshi.css');
+
+#intro-section {
+    display: flex;
+    margin-top: 4rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    align-items: center;
+    width: 100%;
+}
+
+#greeting-section {
+    flex: 1;
+}
+
+#greeting-header {
+    font-size: 3rem;
+    font-family: Satoshi-Medium;
+}
+
+#greeting-text {
+    font-size: 1.2rem;
+}
+
+#portrait-image-container {
+    flex: 1;
+}
+
+#portrait-image {
+    justify-content: center;
+}
