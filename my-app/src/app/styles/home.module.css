@@ -1,7 +1,7 @@
 @import url('@/app/assets/fonts/satoshi/Fonts/WEB/css/satoshi.css');
 
 #intro-section {
-    margin: 4rem;
+    padding: 4rem;
 }
 
 #intro-grid {
