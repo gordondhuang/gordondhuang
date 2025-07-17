@@ -10,6 +10,7 @@
 }
 
 #greeting-section {
+    height: 600px;
     flex: 1;
     padding: 2rem;
     justify-content: center;
@@ -24,18 +25,34 @@
 }
 
 #greeting-header {
-    font-size: 3rem;
+    font-size: 5rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
     font-family: Satoshi-Medium;
 }
 
 #greeting-text {
-    font-size: 1.2rem;
+    font-size: 2rem;
 }
 
-
 #portrait-image {
+    border-radius: 70px 100px 30px 100px;
     align-items: center;
     justify-content: center;
+}
+
+#buttons-section {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+#download-cv-btn {
+    
+}
+
+#contact-btn {
+
 }

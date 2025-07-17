@@ -12,7 +12,7 @@ export function Footer() {
                             <Link href="https://www.instagram.com/gordondhuang/">
                                 <Image
                                     src="/images/instagram.svg" 
-                                    alt="portrait image"
+                                    alt="instagram logo"
                                     width={30} 
                                     height={30} 
                                 ></Image>
@@ -22,7 +22,7 @@ export function Footer() {
                             <Link href="https://www.linkedin.com/in/gordondhuang/">
                                 <Image
                                     src="/images/linkedin.svg" 
-                                    alt="portrait image"
+                                    alt="linkedin logo"
                                     width={30} 
                                     height={30} 
                                 ></Image>
@@ -32,7 +32,18 @@ export function Footer() {
                             <Link href="https://github.com/gordondhuang">
                                 <Image
                                     src="/images/github.svg" 
-                                    alt="portrait image"
+                                    alt="github logo"
+                                    width={30} 
+                                    height={30} 
+                                ></Image>
+                            </Link>
+
+                        </li>
+                        <li>
+                            <Link href="https://open.spotify.com/user/zc89zv64q57fx2vjamb0pfg8t?si=ef3f3fdb85b54826&nd=1&dlsi=ef1bef4901d947eb">
+                                <Image
+                                    src="/images/spotify.svg" 
+                                    alt="spotify logo"
                                     width={30} 
                                     height={30} 
                                 ></Image>

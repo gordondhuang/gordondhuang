@@ -2,6 +2,7 @@
 @import "tailwindcss";
 
 :root {
+  /* background: conic-gradient(from .5turn at bottom center, lightblue, white); */
   --background: #ffffff;
   --foreground: #171717;
   margin: 0;
@@ -64,6 +65,7 @@ nav {
 }
 
 nav a {
+  top: 0;
   float: right;
   text-align: center;
   align-items: center;
