@@ -1,6 +1,6 @@
 /* From Uiverse.io by cssbuttons-io */ 
 
-button {
+.home-button {
   font-size: 0.9rem;
   text-transform: uppercase;
   padding: 0.7rem 2rem;
@@ -15,17 +15,17 @@ button {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-button:hover {
+.home-button:hover {
   transform: translateY(-3px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-button:active {
+.home-button:active {
   transform: translateY(-1px);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-button::after {
+.home-button::after {
   content: "";
   display: inline-block;
   height: 100%;
@@ -38,11 +38,11 @@ button::after {
   transition: all 0.4s;
 }
 
-button::after {
+.home-button::after {
   background-color: #fff;
 }
 
-button:hover::after {
+.home-button:hover::after {
   transform: scaleX(1.4) scaleY(1.6);
   opacity: 0;
 }

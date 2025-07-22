@@ -2,6 +2,8 @@ import Image from 'next/image';
 import styles from '@/app/styles/home.module.css';
 import '@/app/styles/animations.css';
 import { HomeButton } from './components/HomeButton';
+import { Subtitle } from './components/Subtitle';
+import { TimeLine } from './components/TimeLine';
 
 export default function Page() {
   return (
@@ -17,8 +19,8 @@ export default function Page() {
                   I'm an undergraduate computer science student at the University of Washington.
                 </p>
                 <div id={styles['buttons-section']}>
-                  <HomeButton name="Contact Me"></HomeButton>
-                  <HomeButton name="Download CV"></HomeButton>
+                  <HomeButton name="Contact Me" link="/pages/contact"></HomeButton>
+                  <HomeButton name="Download CV" link="/Huang_Gordon.pdf" file="Huang_Gordon.pdf"></HomeButton>
                 </div>
               </section>
               <figure id={styles["portrait-image-container"]} className='fadeRight'>
@@ -32,9 +34,14 @@ export default function Page() {
               </figure>
             </section>
           </section>
-          <section>
-            Experiences
-            Skills
+          <section id={styles['showcase-section']}>
+            <section>
+              <Subtitle name="Experiences"/>
+              <TimeLine/>
+            </section>
+            <section>
+              <Subtitle name="Skills"/>
+            </section>
           </section>
       </main>
     </>

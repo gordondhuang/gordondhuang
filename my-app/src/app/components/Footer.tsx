@@ -52,6 +52,7 @@ export function Footer() {
                         </li>
                     </ul>
                     <h1 id="footer-desc">Developed by Gordon Huang</h1>
+                    <h1 id="footer-desc">© 2025 Gordon Huang. All Rights Reserved.</h1>
                 </div>
             </div>
         </footer>

@@ -2,10 +2,28 @@
 export default function Page() {
     return (
         <>
-            <h1>Background</h1>
-            <h1>Education</h1>
-            <h1>Work Experience</h1>
-            <h1>Hobbies</h1>
+            <section>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Background</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Education</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Work Experience</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Hobbies</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
         </>
     )
 }

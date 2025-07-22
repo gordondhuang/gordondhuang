@@ -1,12 +1,21 @@
+import Link from 'next/link';
 import '@/app/styles/home-button.css';
 
 interface HomeButtonProps {
     name: string;
+    link: string;
+    file?: string | undefined;
 }
 
 
-export function HomeButton({ name }: HomeButtonProps) {
+export function HomeButton({ name, link, file }: HomeButtonProps) {
+    if (link && file) {
+        return (
+            <Link className="home-button" href={ link } download= { file }> { name } </Link>
+        )
+    }
+
     return (
-        <button>{ name }</button>
+        <Link className="home-button" href={ link }>{ name }</Link>
     )
 }

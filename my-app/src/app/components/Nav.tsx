@@ -13,6 +13,9 @@ export function Nav() {
                 <Link href='/pages/about'>About</Link>
               </li>
               <li>
+                <Link href='/'>Experience</Link>
+              </li>
+              <li>
                 <Link href='/pages/projects'>Projects</Link>
               </li>
               <li>

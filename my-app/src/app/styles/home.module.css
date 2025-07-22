@@ -10,7 +10,7 @@
 }
 
 #greeting-section {
-    height: 600px;
+    height: 85vh;
     flex: 1;
     padding: 2rem;
     justify-content: center;
@@ -49,10 +49,7 @@
     gap: 2rem;
 }
 
-#download-cv-btn {
-    
-}
-
-#contact-btn {
-
+#showcase-section {
+    margin-left: 32rem;
+    margin-right: 32rem;
 }
