@@ -35,11 +35,11 @@ export default function Page() {
             </section>
           </section>
           <section id={styles['showcase-section']}>
-            <section>
+            <section id={styles['experiences']}>
               <Subtitle name="Experiences"/>
               <TimeLine/>
             </section>
-            <section>
+            <section id={styles['skills']}>
               <Subtitle name="Skills"/>
             </section>
           </section>

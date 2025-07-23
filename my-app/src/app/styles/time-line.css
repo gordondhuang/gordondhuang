@@ -1,0 +1,66 @@
+#timeline {
+    left: 0;
+    position: relative;
+    width: 50rem;
+    max-width: 50rem;
+}
+
+#timeline::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    top: 0;
+    left: 1rem;
+    z-index: -1;
+}
+
+.card-section {
+    width: 40rem;
+    max-width: 40rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+.timeline-card {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    left: 4rem;
+    position: relative;
+    width: 100%;
+}
+
+.timeline-circle {
+    display: block;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border-radius: 50%;
+    border: solid;
+    border-color: grey;
+    left: -3.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+.timeline-text {
+    position: relative;
+    padding: 2rem 2rem;
+    background: #fff;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.timeline-text h2 {
+    font-family: Satoshi-Bold;
+}
+
+.timeline-text small {
+    display: inline-block;
+    margin-bottom: 0.2rem;
+}
+

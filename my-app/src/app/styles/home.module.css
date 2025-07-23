@@ -1,7 +1,8 @@
 @import url('@/app/assets/fonts/satoshi/Fonts/WEB/css/satoshi.css');
 
 #intro-section {
-    padding: 4rem;
+    position: relative;
+    margin: 4rem;
 }
 
 #intro-grid {
@@ -10,11 +11,12 @@
 }
 
 #greeting-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     height: 85vh;
     flex: 1;
     padding: 2rem;
-    justify-content: center;
-    align-items: center;
 }
 
 #portrait-image-container {
@@ -25,6 +27,7 @@
 }
 
 #greeting-header {
+    text-align: left;
     font-size: 5rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -32,6 +35,8 @@
 }
 
 #greeting-text {
+    margin-left: 0.1em;
+    text-align: left;
     font-size: 2rem;
 }
 
@@ -42,14 +47,74 @@
 }
 
 #buttons-section {
-    position: absolute;
-    bottom: 0;
+    margin-top: auto;
+    position: relative;
     display: flex;
-    align-items: center;
     gap: 2rem;
 }
 
 #showcase-section {
-    margin-left: 32rem;
-    margin-right: 32rem;
+    width: 50rem;
+    margin: 0 auto;
+}
+
+#experiences {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+#skills {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+/* Styles for mobile devices (up to 767px wide) */
+@media screen and (max-width: 767px) {
+    #intro-section {
+        margin: 4rem;
+    }
+
+    #intro-grid {
+        display: flex;
+        align-items: center;
+    }
+
+    #greeting-section {
+        height: 85vh;
+        flex: 1;
+        padding: 2rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #portrait-image-container {
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #greeting-header {
+        position: relative;
+        font-size: 5rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        font-family: Satoshi-Medium;
+    }
+
+    #greeting-text {
+        position: relative;
+        font-size: 2rem;
+    }
+
+    #portrait-image {
+        border-radius: 70px 100px 30px 100px;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/* Styles for tablets and larger (768px and up) */
+@media (max-width: 1024px) {
+
 }
