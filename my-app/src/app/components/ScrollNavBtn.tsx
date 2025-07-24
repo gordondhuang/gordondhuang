@@ -1,16 +1,41 @@
 'use client';
 
 import Link from 'next/link';
-import React from 'react';
+import React, { useEffect } from 'react';
+import { usePathname } from 'next/navigation';
 
 export function ScrollNavBtn({ text, id }: { text: string, id: string }) {
+    const pathname = usePathname();
+
+    // scroll to section on click
     const handleClick = (event: React.MouseEvent) => {
-        event.preventDefault();
-        scrollToSection(id);
+        if (pathname === '/') {
+            event.preventDefault();
+            scrollToSection(id);
+        } else {
+            localStorage.setItem('scrollTargetId', id);
+        }
     };
-    
+
+    // render root page and then run
+    useEffect(() => {
+        if (pathname === '/') {
+            const scrollTarget = localStorage.getItem('scrollTargetId');
+            if (scrollTarget) {
+                localStorage.removeItem('scrollTargetId');
+                setTimeout(() => {
+                    scrollToSection(scrollTarget);
+                }, 100);
+            }
+        }
+    }, [pathname]);
+
+    const href = pathname === '/' ? '#' : '/';
+
     return (
-        <Link href='#' onClick={handleClick}>{text}</Link>
+        <Link href={href} onClick={handleClick}>
+            {text}
+        </Link>
     );
 }
 

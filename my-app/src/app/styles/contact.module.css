@@ -1,15 +1,16 @@
 @import url('@/app/assets/fonts/satoshi/Fonts/WEB/css/satoshi.css');
 
 #contact-form-container {
-    padding: 6rem;
-    padding-bottom: 8rem;
+    margin: 6rem;
     justify-content: center;
     align-items: center;
     font-size: 1.5rem;
 }
 
 #contact-header {
-    color: #b3aca7;
+    width: 100%;
+    text-align: center;
+    color: black;
     font-family: Satoshi-Bold;
     position: relative;
     font-size: 2.5rem;

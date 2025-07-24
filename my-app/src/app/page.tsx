@@ -36,7 +36,7 @@ export default function Page() {
           </section>
           <section id={styles['showcase-section']}>
             <section id={styles['experiences']}>
-              <Subtitle name="Experiences"/>
+              <Subtitle name="Experience"/>
               <TimeLine/>
             </section>
             <section id={styles['skills']}>

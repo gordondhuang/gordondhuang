@@ -2,9 +2,24 @@
 export default function Page() {
     return (
         <>
-            <h1>Canvas Fetcher</h1>
-            <h1>Caf-Fiend</h1>
-            <h1>mailing-service</h1>
+            <section>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>mailing-service</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Caf-Fiend</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Canvas Fetcher</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>  
         </>
     )
 }

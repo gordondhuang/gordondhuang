@@ -11,9 +11,9 @@ interface CardProps {
 export function TimeLineCard({role, header, dates, desc}: CardProps) {
     return (
         <section className="timeline-card">
+            <span className="timeline-circle"></span>
             <section className="timeline-text">
-                <span className="timeline-circle"></span>
-                <h2>{header}</h2>
+                <h1>{header}</h1>
                 <small>{dates}</small>
                 <p>{desc}</p>
             </section>
