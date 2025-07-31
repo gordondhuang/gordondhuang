@@ -38,6 +38,9 @@
 .text-section p {
     padding: 2rem, 2rem, 2rem, 0;
     font-size: 1rem;
-    margin-left: 0.15em;
     line-height: 1.6;
+}
+
+.subtitle {
+    text-indent: -0.25rem;
 }

@@ -1,0 +1,29 @@
+@import url('@/app/assets/fonts/satoshi/Fonts/WEB/css/satoshi.css');
+
+.skill-container {
+    display:flex; 
+    width: 6.5vw;
+    height: 6vw;
+    /* flex: 0 0 calc((100% - (2 * 8rem)) / 6); */
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 0.2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5%;
+    padding: 2rem;
+    opacity: 80%;
+}
+
+.logo {
+    display: block;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoName {
+    margin-top: 0.5rem;
+    font-family: Satoshi-Light;
+    font-size: 1rem;
+    text-align: center;
+}

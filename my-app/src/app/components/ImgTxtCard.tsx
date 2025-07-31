@@ -4,7 +4,7 @@ import Image from 'next/image';
 interface CardProps {
     img: React.ReactNode;
     title: string;
-    desc: string;
+    desc: React.ReactNode;
     isDefault: boolean;
 }
 
@@ -17,8 +17,8 @@ export function ImgTxtCard({ img, title, desc, isDefault }: CardProps) {
                     {img}
                 </section>
                 <section id="text-right-section" className="text-section">
-                    <h1>{title}</h1>
-                    <p>{desc}</p>
+                    <h1 className="subtitle">{title}</h1>
+                    {desc}
                 </section>
             </section>
         );
@@ -26,8 +26,8 @@ export function ImgTxtCard({ img, title, desc, isDefault }: CardProps) {
         return (
             <section id="card">
                 <section id="text-left-section" className="text-section">
-                    <h1>{title}</h1>
-                    <p>{desc}</p>
+                    <h1 className="subtitle">{title}</h1>
+                    {desc}
                 </section>
                 <section id="image-section">
                     {img}

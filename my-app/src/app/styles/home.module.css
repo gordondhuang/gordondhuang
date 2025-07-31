@@ -32,10 +32,10 @@
     margin-top: 2rem;
     margin-bottom: 2rem;
     font-family: Satoshi-Medium;
+    text-indent: -0.35rem;
 }
 
 #greeting-text {
-    margin-left: 0.15em;
     text-align: left;
     font-size: 2rem;
 }
@@ -66,6 +66,15 @@
 #skills {
     margin-top: 5rem;
     margin-bottom: 5rem;
+}
+
+#skills-list {
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 4rem;
 }
 
 /* Styles for mobile devices (up to 767px wide) */
