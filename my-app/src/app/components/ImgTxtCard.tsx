@@ -12,11 +12,11 @@ interface CardProps {
 export function ImgTxtCard({ img, title, desc, isDefault }: CardProps) {
     if (isDefault) {
         return (
-            <section id="card">
-                <section id="image-section">
+            <section className="card">
+                <section className="image-section">
                     {img}
                 </section>
-                <section id="text-right-section" className="text-section">
+                <section className="text-section text-right-section">
                     <h1 className="subtitle">{title}</h1>
                     {desc}
                 </section>
@@ -24,12 +24,12 @@ export function ImgTxtCard({ img, title, desc, isDefault }: CardProps) {
         );
     } else {
         return (
-            <section id="card">
-                <section id="text-left-section" className="text-section">
+            <section className="card">
+                <section className="text-section text-left-section">
                     <h1 className="subtitle">{title}</h1>
                     {desc}
                 </section>
-                <section id="image-section">
+                <section className="image-section">
                     {img}
                 </section>
             </section>

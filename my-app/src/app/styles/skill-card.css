@@ -1,4 +1,5 @@
 @import url('@/app/assets/fonts/satoshi/Fonts/WEB/css/satoshi.css');
+@import url("animations.css");
 
 .skill-container {
     display:flex; 
@@ -12,6 +13,10 @@
     border-radius: 5%;
     padding: 2rem;
     opacity: 80%;
+}
+
+.skill-container:hover {
+
 }
 
 .logo {

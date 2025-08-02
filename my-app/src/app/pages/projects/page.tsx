@@ -1,25 +1,17 @@
+import { ProjectCard } from '@/app/components/ProjectCard';
 
 export default function Page() {
     return (
         <>
             <section>
-                <table>
-                    <tbody>
-                        <tr>
-                            <td>mailing-service</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>Caf-Fiend</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>Canvas Fetcher</td>
-                            <td></td>
-                        </tr>
-                    </tbody>
-                </table>
+                <section>
+                    <ul>
+                        {/* <ProjectCard/> */}
+                        mailing service, Caf-Fiend, Canvas Fetcher
+                    </ul>
+                </section>
             </section>  
+            {/* <ProjectCard/> */}
         </>
-    )
+    );
 }
