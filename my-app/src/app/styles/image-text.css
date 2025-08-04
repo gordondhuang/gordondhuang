@@ -1,6 +1,6 @@
 .card {
-    padding-top: 5vh;
-    padding-bottom: 5vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
     position: relative;
     display: flex;
     flex-direction: row;
@@ -17,7 +17,7 @@
     align-items: center;
     width: 70rem;
     height: 60rem;
-    padding: 5rem;
+    padding: 3rem;
 }
 
 .image-section img {
@@ -35,7 +35,7 @@
     box-sizing: border-box;
     width: fit-content;
     height: fit-content;
-    padding: 5rem;
+    padding: 3rem;
 }
 
 .text-left-section {

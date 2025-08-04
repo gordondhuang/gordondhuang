@@ -56,3 +56,26 @@
 .zoomIn {
   animation: zoomIn 2s ease-in-out forwards;
 }
+
+@media (prefers-reduced-motion: reduce) {
+  .fadeUp {
+    transition: none;
+    animation: none;
+  }
+  
+  .fadeLeft {
+    transition: none;
+    animation: none;
+  }
+  
+  .fadeRight {
+    transition: none;
+    animation: none;
+  }
+  
+  .zoomIn {
+    transition: none;
+    animation: none;
+  }
+
+}

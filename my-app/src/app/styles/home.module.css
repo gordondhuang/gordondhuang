@@ -68,15 +68,6 @@
     margin-bottom: 5rem;
 }
 
-#skills-list {
-    padding: 2rem;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 4rem;
-}
-
 /* Styles for mobile devices (up to 767px wide) */
 @media screen and (max-width: 767px) {
     #intro-section {

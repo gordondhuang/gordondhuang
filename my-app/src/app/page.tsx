@@ -4,7 +4,7 @@ import '@/app/styles/animations.css';
 import { HomeButton } from './components/HomeButton';
 import { Subtitle } from './components/Subtitle';
 import { TimeLine } from './components/TimeLine';
-import { SkillCard } from './components/SkillCard';
+import { SkillSection } from './components/SkillSection';
 
 export default function Page() {
   return (
@@ -19,6 +19,12 @@ export default function Page() {
                   <br/>
                   I'm an undergraduate computer science student at the University of Washington.
                 </p>
+
+
+                <p style={{color: "red", marginTop: "auto", fontSize:"1.6rem"}}>Still a W.I.P.</p>
+
+
+
                 <div id={styles['buttons-section']}>
                   <HomeButton name="Contact Me" link="/pages/contact"></HomeButton>
                   <HomeButton name="Download CV" link="/Huang_Gordon.pdf" file="Huang_Gordon.pdf"></HomeButton>
@@ -47,23 +53,7 @@ export default function Page() {
               <Subtitle name="Skills"/>
               <section>
                 <section id={styles['skills-list-container']}>
-                  <ul id={styles['skills-list']}>
-                    <SkillCard src="/images/c-original.svg" alt="C"/>
-                    <SkillCard src="/images/cplusplus-original.svg" alt="C++"/>
-                    <SkillCard src="/images/html5-original.svg" alt="HTML"/>
-                    <SkillCard src="/images/css3-original.svg" alt="CSS"/>
-                    <SkillCard src="/images/javascript-original.svg" alt="JavaScript"/>
-                    <SkillCard src="/images/python-original.svg" alt="Python"/>
-                    <SkillCard src="/images/java-original.svg" alt="Java"/>
-                    <SkillCard src="/images/r-lang.svg" alt="R"/>
-                    <SkillCard src="/images/typescript-original.svg" alt="TypeScript"/>
-                    <SkillCard src="/images/github.svg" alt="GitLab"/>
-                    <SkillCard src="/images/gitlab-original.svg" alt="GitHub"/>
-                    <SkillCard src="/images/latex-original.svg" alt="Latex"/>
-                    <SkillCard src="/images/sqlite-original.svg" alt="SQLite"/>
-                    <SkillCard src="/images/nextjs-original.svg" alt="NextJS"/>
-                    <SkillCard src="/images/react-original.svg" alt="ReactJS"/>
-                  </ul>
+                  <SkillSection/>
                 </section>
               </section>
             </section>

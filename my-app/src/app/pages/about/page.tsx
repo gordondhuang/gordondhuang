@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from '@/app/styles/about.module.css';
 import { ImgTxtCard } from "@/app/components/ImgTxtCard";
+import { Subtitle } from "@/app/components/Subtitle";
 
 export default function Page() {
     return (
@@ -27,11 +28,11 @@ export default function Page() {
                             <br/>
                             <p>
                                 Since I was a kid I had always known I wanted to get involved with tech in an impactful way. What really pushed me to think
-                                about tech was the thought of being able to create any application or website you wanted. This sparked my curisoity and
+                                about tech was the thought of being able to create any application or website I wanted. This sparked my curisoity and
                                 led me down the YouTube rabbit hole where I would watch channels like Mark Rober, Michael Reeves, and Stuff Made Here.
-                                It became a source of inspiration and excitement just watching inventions and creative gadgest come to life.
+                                It became a source of inspiration and excitement just watching inventions and creative gadgets come to life.
                                 One of my favorite ways to get a hold on my curiosity is to write my thoughts down. Often this comes in the form of an
-                                idea I had for a project and want to execute on later.
+                                idea I had for a project and want to execute later on.
                             </p>
                             <br/>
                             <p>
@@ -109,7 +110,7 @@ export default function Page() {
                             <p>
                                 My career has been a major focus throughtout my young adult years, where I mainly worked minimum wage jobs as a teenager.
                                 These jobs taught me how to manage responsibilities and was where I acquired many of the soft skills I rely on. I started my journey 
-                                in the pursuit of software development as a junior high school student through a program called Launch-206 and landing an internship
+                                in the pursuit of software development as a junior year of high school student through a program called Launch-206 and landing an internship
                                 through a company that specializes in VR/AR called Simulated Immersive Experimental Realities. That was my first experience where
                                 I gained exposure to common real world work practices and leading a team. With impending deadlines, I received vital support from industry 
                                 professionals and developed a VR game using the Unity game engine that worked using the Oculus Quest 2.
@@ -169,8 +170,15 @@ export default function Page() {
                     isDefault={false}
                 />
             </section>
-            <section>
-                Values
+            <section id={styles["values-section"]}>
+                <section>
+                    <Subtitle name="Values"/>
+                </section>
+            </section>
+            <section id={styles["gallery-section"]}>
+                <section>
+                    <Subtitle name="Gallery"/>
+                </section>
             </section>
         </>
     )
