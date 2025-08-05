@@ -1,6 +1,6 @@
 #project-section {
     width: 100%;
-    margin: 5rem;
+    padding: 3rem;
 }
 
 #project-section h1 {
@@ -17,12 +17,11 @@
 }
 
 #project-list {
-    padding: 4rem 0 4rem 0;
+    padding: 5rem 1rem 4rem 1rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    flex-grow: 0;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    gap: 5rem;
+    gap: 2rem;
 }

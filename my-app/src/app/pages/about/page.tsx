@@ -12,8 +12,8 @@ export default function Page() {
                     img={<Image 
                             src="/images/space_needle_rail.JPG" 
                             alt="space needle image"
-                            width={1280} 
-                            height={720}
+                            fill
+                            priority
                             id={styles["space_needle"]}
                         />}
                     title="Background🌲"
@@ -36,8 +36,8 @@ export default function Page() {
                             </p>
                             <br/>
                             <p>
-                                I'm actively pursuing a career as a software engineer and I am particularly interested in the fields of 
-                                artificial intelligence and machine learning. I'm currently open and looking for new roles and positions to 
+                                I'm currently actively pursuing a career as a software engineer and I am particularly interested in the fields of 
+                                artificial intelligence and machine learning. I'm open and looking for new roles and positions to 
                                 expand on my skill set and contribute to meaningful projects. After graduation, I hope to land an entry role where
                                 I can focus on refining my skills and expanding on the knowledge I obtained through my degree to further progress and 
                                 develop innovative technologies to benefit the world.
@@ -50,8 +50,8 @@ export default function Page() {
                     img={<Image
                             src="/images/gen1.JPG" 
                             alt="GEN1 UW Registered Student Organization"
-                            width={1024} 
-                            height={576}
+                            fill
+                            priority
                             id={styles["gen1"]}
                         />}
                     title="Education🎓"
@@ -78,19 +78,23 @@ export default function Page() {
                             </p>
                             <br/>
                             <p> 
-                                When I reached high school, I had to make a decision, to choose the engineering or the computer science pathway. In connection
-                                with my first-generation college student background I made the decision to join University of Washington's Upward Bound program, 
-                                a college preparation program. During high school I remained socially active as well, ocassionally joining in on discussions about 
-                                civil service. I also joined the Green Team club and my high school robotics before the COVID-19 pandemic had put a stop to that.
+                                When I reached high school, I had to make a decision, to choose the engineering or the computer science pathway. The classes
+                                that I took were crucial to my professional development and the large emphasis placed on STEM propelled me forward in thinking
+                                about my future career goals. In connection with my first-generation college student background I made the decision to join 
+                                University of Washington's Upward Bound program, a college preparation program. Higher education was always something that my parents
+                                wanted for me, but this program and the positive influences that mentors had on me helped me realize that I wanted this too.
+                                I remained socially active as well, ocassionally joining in on discussions about civil service with the ACRS program. 
+                                Curiosity drove me to join two clubs, the Green Team club and my high school robotics, before the COVID-19 pandemic had put a stop to that.
                             </p>
                             <br/>
                             <p>
-                                Through this long journey, it led me to the University of Washington's Paul G. Allen School of Computer Science & Engineering.
+                                Through this long journey, it led me to 
+                                the <Link href="https://www.cs.washington.edu/" className={styles["about-links"]}>
+                                University of Washington's Paul G. Allen School of Computer Science & Engineering</Link>.
                                 This is where I currently stand, a culmination of my past experiences and continued exploration of my interests. Many of the lessons
                                 that I learned and opportunities I had over the years are part of who I am and still influence my personal decisions and goals to this day. 
-                                For instance, my part in the first-generation college student community 
-                                namely <Link href="https://gen1.cs.washington.edu/">GEN1</Link>, a registered student organization dedicated to uplifting 
-                                first generation college students.
+                                For instance, my part as a board member in <Link href="https://gen1.cs.washington.edu/">GEN1</Link>, 
+                                a registered student organization dedicated to uplifting first generation college students. 
                             </p> 
                         </>
                     }
@@ -100,8 +104,8 @@ export default function Page() {
                     img={<Image
                             src="/images/globaldeel.jpg" 
                             alt="GlobalDeel"
-                            width={1250} 
-                            height={600}
+                            fill
+                            priority
                             id={styles["globaldeel"]}
                         />}
                     title="Work Experience💼"
@@ -118,7 +122,7 @@ export default function Page() {
                             <br/>
                             <p>
                                 As I continued to search for new opportunities in high school I stumbled upon Computing For All, a non-profit organization dedicated 
-                                to preparing students for a career in tech. I decided to join the pre-apprentice program and gained valuable insight into the tech industry 
+                                to preparing students for a career in tech. I decided to join the pre-apprenticeship program and gained valuable insight into the tech industry 
                                 from guest speakers and mentors. The program began with Scratch and a focus on UI/UX design, however with college applications around the corner
                                 I decided to prioritize my education and decided not to move forward with the program.
                             </p>
@@ -138,8 +142,8 @@ export default function Page() {
                     img={<Image
                             src="/images/rattlesnake.jpg" 
                             alt="Rattlesnake Ledge"
-                            width={960} 
-                            height={540}
+                            fill
+                            priority
                             id={styles["rattlesnake"]}
                         />}
                     title="Hobbies🏸"

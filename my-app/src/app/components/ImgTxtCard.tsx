@@ -10,29 +10,15 @@ interface CardProps {
 
 
 export function ImgTxtCard({ img, title, desc, isDefault }: CardProps) {
-    if (isDefault) {
-        return (
-            <section className="card">
-                <section className="image-section">
-                    {img}
-                </section>
-                <section className="text-section text-right-section">
-                    <h1 className="subtitle">{title}</h1>
-                    {desc}
-                </section>
+    return (
+        <section className={`card ${!isDefault ? "default" : ""}`}>
+            <section className="image-section">
+                {img}
             </section>
-        );
-    } else {
-        return (
-            <section className="card">
-                <section className="text-section text-left-section">
-                    <h1 className="subtitle">{title}</h1>
-                    {desc}
-                </section>
-                <section className="image-section">
-                    {img}
-                </section>
+            <section className="text-section text-right-section">
+                <h1 className="subtitle">{title}</h1>
+                {desc}
             </section>
-        );
-    }
+        </section>
+    );
 } 

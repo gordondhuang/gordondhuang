@@ -3,3 +3,24 @@
     width: fit-content;
     text-align: center;
 }
+
+
+/* Styles for mobile devices (up to 767px wide) */
+@media screen and (max-width: 767px) {
+    .subtitle {
+        font-size: 2rem;
+        width: fit-content;
+        text-align: center;
+    }
+
+}
+
+/* Styles for tablets and larger (768px and up) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .subtitle {
+        font-size: 2rem;
+        width: fit-content;
+        text-align: center;
+    }
+
+}
