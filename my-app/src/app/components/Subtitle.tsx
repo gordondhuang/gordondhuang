@@ -1,4 +1,4 @@
-import '@/app/styles/subtitle.css';
+import '@/styles/subtitle.css';
 
 export function Subtitle({ name }: { name: string }) {
     return (

@@ -1,7 +1,7 @@
 'use client';
 
 import Image from "next/image";
-import '@/app/styles/skills.css';
+import '@/styles/skills.css';
 import { useEffect, useRef } from 'react';
 
 export function SkillCard({ src, alt, delay }: {src: string, alt: string, delay: number}) {

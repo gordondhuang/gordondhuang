@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import '@/app/styles/home-button.css';
+import '@/styles/home-button.css';
 
 interface HomeButtonProps {
     name: string;

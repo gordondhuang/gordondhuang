@@ -1,6 +1,6 @@
-import { ProjectCard } from '@/app/components/ProjectCard';
-import styles from '@/app/styles/projects.module.css';
-import { Subtitle } from '@/app/components/Subtitle';
+import { ProjectCard } from '@/components/ProjectCard';
+import styles from '@/styles/projects.module.css';
+import { Subtitle } from '@/components/Subtitle';
 
 export default function Page() {
     return (

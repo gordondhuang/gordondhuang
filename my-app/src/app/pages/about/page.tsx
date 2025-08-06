@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
-import styles from '@/app/styles/about.module.css';
-import { ImgTxtCard } from "@/app/components/ImgTxtCard";
-import { Subtitle } from "@/app/components/Subtitle";
+import styles from '@/styles/about.module.css';
+import { ImgTxtCard } from "@/components/ImgTxtCard";
+import { Subtitle } from "@/components/Subtitle";
 
 export default function Page() {
     return (

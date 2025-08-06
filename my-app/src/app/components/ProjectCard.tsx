@@ -1,4 +1,4 @@
-import '@/app/styles/project-card.css';
+import '@/styles/project-card.css';
 import Image from 'next/image';
 import Link from 'next/link';
 

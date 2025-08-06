@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import styles from '@/app/styles/thankyou.module.css';
+import styles from '@/styles/thankyou.module.css';
 
 export default function Page() {
     return (

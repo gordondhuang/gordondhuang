@@ -1,4 +1,4 @@
-import '@/app/styles/globals.css';
+import '@/styles/globals.css';
 import Link from 'next/link';
 import { ScrollNavBtn } from './ScrollNavBtn';
 

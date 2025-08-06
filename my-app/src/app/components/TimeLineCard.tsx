@@ -1,6 +1,6 @@
 'use client'
 
-import '@/app/styles/time-line.css';
+import '@/styles/time-line.css';
 import React, { useState, useRef, useEffect } from 'react';
 
 interface CardProps {

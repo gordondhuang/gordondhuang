@@ -1,11 +1,11 @@
 import Image from 'next/image';
-import styles from '@/app/styles/home.module.css';
-import '@/app/styles/animations.css';
+import styles from '@/styles/home.module.css';
+import '@/styles/animations.css';
 import { HomeButton } from './components/HomeButton';
 import { Subtitle } from './components/Subtitle';
 import { TimeLine } from './components/TimeLine';
 import { SkillSection } from './components/SkillSection';
-import { skills, certifications } from '@/app/utils/imgLists';
+import { skills, certifications } from '@/utils/imgLists';
 
 export default function Page() {
   return (

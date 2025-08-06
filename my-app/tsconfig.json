@@ -20,7 +20,7 @@
       }
     ],
     "paths": {
-      "@/*": ["*"],
+      "@/*": ["app/*"],
       "@styles/*": ["app/styles/*"],
       "@utils/*": ["app/utils/*"],
     }

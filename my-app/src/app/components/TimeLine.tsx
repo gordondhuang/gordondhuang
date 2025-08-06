@@ -1,4 +1,4 @@
-import '@/app/styles/time-line.css';
+import '@/styles/time-line.css';
 import { TimeLineCard } from './TimeLineCard';
 
 export function TimeLine() {

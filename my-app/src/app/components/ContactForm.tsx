@@ -3,7 +3,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useRouter } from 'next/navigation';
 import emailjs from '@emailjs/browser';
-import '@/app/styles/contact-form.css';
+import '@/styles/contact-form.css';
 
 export const ContactForm: React.FC = () => {
 

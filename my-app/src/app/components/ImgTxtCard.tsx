@@ -1,4 +1,4 @@
-import '@/app/styles/image-text.css';
+import '@/styles/image-text.css';
 import Image from 'next/image';
 import { Subtitle } from './Subtitle';
 

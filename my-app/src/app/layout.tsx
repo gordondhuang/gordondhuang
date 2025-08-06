@@ -1,7 +1,7 @@
 import { Metadata, Viewport } from 'next';
-import '@/app/styles/globals.css';
-import { Nav } from '@/app/components/Nav';
-import { Footer } from '@/app/components/Footer';
+import '@/styles/globals.css';
+import { Nav } from '@/components/Nav';
+import { Footer } from '@/components/Footer';
 import Script from 'next/script';
 import SmoothScroll from './components/SmoothScroll';
 

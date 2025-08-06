@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import '@/app/styles/globals.css';
+import '@/styles/globals.css';
 
 export function Footer() {
     return (
