@@ -54,15 +54,14 @@ jobs:
         with:
           static_site_generator: next
 
-      # --- Remove cache to fix issues ---
-      # - name: Restore cache
-      #   uses: actions/cache@v4
-      #   with:
-      #     path: |
-      #       .next/cache
-      #     key: ${{ runner.os }}-nextjs-${{ hashFiles('my-app/**/package-lock.json', 'my-app/**/yarn.lock') }}-${{ hashFiles('my-app/**.[jt]s', 'my-app/**.[jt]sx') }}
-      #     restore-keys: |
-      #       ${{ runner.os }}-nextjs-${{ hashFiles('my-app/**/package-lock.json', 'my-app/**/yarn.lock') }}-
+      - name: Restore cache
+        uses: actions/cache@v4
+        with:
+          path: |
+            .next/cache
+          key: ${{ runner.os }}-nextjs-${{ hashFiles('my-app/**/package-lock.json', 'my-app/**/yarn.lock') }}-${{ hashFiles('my-app/**.[jt]s', 'my-app/**.[jt]sx') }}
+          restore-keys: |
+            ${{ runner.os }}-nextjs-${{ hashFiles('my-app/**/package-lock.json', 'my-app/**/yarn.lock') }}-
 
       - name: Clean install dependencies
         run: |
@@ -71,7 +70,9 @@ jobs:
           npm install
 
       - name: Build with Next.js
-        run: ${{ steps.detect-package-manager.outputs.runner }} next build
+        run: |
+          ${{ steps.detect-package-manager.outputs.runner }} next build
+          ${{ steps.detect-package-manager.outputs.runner }} next export
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
