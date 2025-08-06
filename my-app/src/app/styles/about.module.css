@@ -56,3 +56,68 @@
     margin-left: 10vw;
     margin-right: 10vw;
 }
+
+/* Styles for mobile devices (up to 767px wide) */
+@media screen and (max-width: 767px) {
+    #main-section {
+        margin-left: 10vw;    
+        margin-right: 10vw;    
+    }
+
+    .image-section :global(img) {
+        object-fit: contain;
+        object-position: center;
+        display: block;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    #space_needle {
+        width: 25rem !important;
+        height: 40rem !important;
+        margin: auto;
+        border-radius: 0;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    #gen1 {
+        width: 45rem;
+        height: 25rem;
+        margin: 0 auto;
+        clip-path: polygon(0% 10%, 100% 10%, 100% 90%, 0% 90%);
+    }
+
+    #globaldeel {
+        margin: auto;
+        width: 50rem !important;
+        height: 30rem !important;
+        border-radius: 5%;
+    }
+
+    #rattlesnake {
+        width: 50rem !important;
+        height: 40rem !important;
+        margin: auto;
+        border-radius: 5%;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .about-links {
+        text-decoration: underline;
+    }
+
+    #values-section {
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+
+    #gallery-section {
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+}
+
+/* Styles for tablets and larger (768px and up) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+}

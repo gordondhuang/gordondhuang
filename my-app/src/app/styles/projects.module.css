@@ -12,7 +12,7 @@
     margin: 0.5rem auto 0.5rem auto;
     border: none;
     height: 2px;
-    width: 50rem;
+    width: 80rem;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0) )
 }
 
@@ -24,4 +24,31 @@
     justify-content: flex-start;
     align-items: center;
     gap: 2rem;
+}
+
+/* Styles for mobile devices (up to 767px wide) */
+@media screen and (max-width: 767px) {
+    #project-section {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    #project-hz-line {
+        width: 15rem;
+    }
+
+    #project-list {
+        padding: 2rem 0.5rem 2rem 0.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem 0;
+    }
+
+}
+
+/* Styles for tablets and larger (768px and up) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
 }

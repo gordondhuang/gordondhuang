@@ -11,16 +11,16 @@ export function Nav() {
               <Link href='/'>Home</Link>
             </li>
             <li>
-              <Link href='/pages/about'>About</Link>
+              <Link href='/about'>About</Link>
             </li>
             <li>
               <ScrollNavBtn text="Experience" id="home-module__CAdaBa__experiences"/>
             </li>
             <li>
-              <Link href='/pages/projects'>Projects</Link>
+              <Link href='/projects'>Projects</Link>
             </li>
             <li>
-              <Link href='/pages/contact'>Contact</Link>
+              <Link href='/contact'>Contact</Link>
             </li>
           </ul>
         </div>

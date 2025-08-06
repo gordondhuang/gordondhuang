@@ -8,6 +8,15 @@ export default function Page() {
     return (
         <>
             <section id={styles["main-section"]}>
+                <Subtitle name="Hello World." 
+                    style={{
+                        fontSize: '6rem',
+                        paddingTop: '4rem',
+                        marginLeft: 'auto',
+                        marginRight: 'auto',
+                        textAlign: 'center',
+                    }}
+                />
                 <ImgTxtCard
                     img={<Image 
                             src="/images/space_needle_rail.JPG" 

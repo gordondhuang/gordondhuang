@@ -97,4 +97,200 @@
     
 }
 
+/* Styles for mobile devices (up to 767px wide) */
+@media screen and (max-width: 767px) {
+    .project-container {
+        width: 20rem;
+        height: 50rem;
+        padding: 1rem;
+        box-shadow: 0 0 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 
+    .image-container {
+        width: 100%;
+        height: 15rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text-container {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    .project-heading {
+        padding: 0.5rem 0 0 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 0.3rem;
+    }
+
+    .project-image {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .project-name {
+        width: fit-content;
+        font-size: 1.2rem;
+        font-family: Satoshi-Medium;
+        margin-right: auto;
+    }
+
+    .project-link {
+
+    }
+
+    .project-link:hover {
+        cursor: pointer;
+        transform: scale(1.05);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .tag-list {
+        padding-top: 0.2rem;
+        padding-bottom: 0.2rem;
+        display: flex;
+        gap: 0.5rem;
+        overflow-x: none;
+        padding-left: 0.1rem;
+        padding-right: 0.1rem;
+        scrollbar-width: 2px;
+    }
+
+    .tag-list li {
+        font-size: 0.5rem;
+        padding: 0.3rem;
+        border-radius: 10%;
+        box-shadow: 0 0 2px;
+    }
+
+    .tag-list li:hover {
+        cursor: pointer;
+        transform: scale(1.10);
+        box-shadow: 0 0 5px rgba(0,0,0,0.5);
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .project-desc-container {
+        font-size: 0.6rem;
+        height: 100%;
+        overflow-y: auto;
+    }
+
+    .project-desc-container::-webkit-scrollbar {
+        width: 0.3rem;
+    }
+
+    .project-desc {
+        
+    }
+}
+
+/* Styles for tablets and larger (768px and up) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .project-container {
+        width: 50rem;
+        height: 90vh;
+        flex: 0 0 calc((100% - 2 * 2rem) / 2);
+        padding: 2rem;
+        box-shadow: 0 0 5px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .image-container {
+        width: 100%;
+        height: 20rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text-container {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    .project-heading {
+        padding: 0.5rem 0 0 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 0.3rem;
+    }
+
+    .project-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .project-name {
+        width: fit-content;
+        font-size: 1.2rem;
+        font-family: Satoshi-Medium;
+        margin-right: auto;
+    }
+
+    .project-link {
+
+    }
+
+    .project-link:hover {
+        cursor: pointer;
+        transform: scale(1.05);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .tag-list {
+        padding-top: 0.2rem;
+        padding-bottom: 0.2rem;
+        display: flex;
+        gap: 0.5rem;
+        overflow-x: none;
+        padding-left: 0.1rem;
+        padding-right: 0.1rem;
+        scrollbar-width: 2px;
+    }
+
+    .tag-list::-webkit-scrollbar {
+        width: 2px;
+        height: 2px;
+    }
+
+    .tag-list li {
+        font-size: 0.8rem;
+        padding: 0.3rem;
+        border-radius: 10%;
+        box-shadow: 0 0 2px;
+    }
+
+    .tag-list li:hover {
+        cursor: pointer;
+        transform: scale(1.10);
+        box-shadow: 0 0 5px rgba(0,0,0,0.5);
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .project-desc-container {
+        height: 100%;
+        overflow-y: auto;
+    }
+
+    .project-desc-container::-webkit-scrollbar {
+    width: 0.3rem;
+    }
+
+    .project-desc {
+        
+    }
+}

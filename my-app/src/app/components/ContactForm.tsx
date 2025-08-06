@@ -41,11 +41,11 @@ export const ContactForm: React.FC = () => {
 
     return (
         <form id="contact-form" onSubmit={sendEmail} ref={form}>
-            <input type="text" id="name" name="name" placeholder="What's your name?" pattern="^[A-Za-z\s]+$" required />
-            <input type="text" id="email" name="email" placeholder="What's your email?" required />
-            <input type="text" id="subject" name="subject" placeholder="Subject of your message" required />
+            <input type="text" className="contact-input" id="name" name="name" placeholder="What's your name?" pattern="^[A-Za-z\s]+$" required />
+            <input type="text" className="contact-input" id="email" name="email" placeholder="What's your email?" required />
+            <input type="text" className="contact-input" id="subject" name="subject" placeholder="Subject of your message" required />
             <textarea id="message" name="message" placeholder="Your message here..." required />
-            <input type="submit" id="submit" value="Submit"/>
+            <input type="submit" className="contact-input" id="submit" value="Submit"/>
         </form>
     );
 };

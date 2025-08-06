@@ -55,3 +55,69 @@
 .subtitle {
     text-indent: -0.25rem;
 }
+
+/* Styles for mobile devices (up to 767px wide) */
+@media screen and (max-width: 767px) {
+    .card {
+        position: relative;
+        display: flex;
+        flex-direction: column !important;
+        justify-content: center;
+        align-items: center;
+        
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+        width: 100%;
+        min-height: 100%;
+    }
+
+    .card.default {
+    flex-direction: row-reverse;
+    }
+
+    .image-section {
+        position: relative;
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+
+        aspect-ratio: 1 / 1;
+        width: 30rem;
+        height: 50rem;
+    }
+
+    .text-section {
+        flex: 1 1 auto; 
+        min-height: 0;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        width: fit-content;
+        height: auto;
+        padding: 0 1rem 0 1rem;
+    }
+
+    .text-section h1 {
+        padding-bottom: 1rem;
+        width: fit-content;
+        height: fit-content;
+        font-size: 2rem;
+    }
+
+    .text-section p {
+        padding: 1rem, 1rem, 1rem, 0;
+        font-size: 0.7rem;
+        line-height: 1.6;
+    }
+
+    .subtitle {
+        text-indent: -0.25rem;
+    }
+}
+
+/* Styles for tablets and larger (768px and up) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+}

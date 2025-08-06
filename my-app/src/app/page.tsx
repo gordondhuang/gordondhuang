@@ -18,8 +18,17 @@ export default function Page() {
                 <p id={styles['greeting-text']} className='fadeUp'>
                   Welcome to my portfolio!
                   <br/>
-                  I'm an undergraduate computer science student at the University of Washington.
+                  I'm an undergraduate computer science student 
+                  at the University of Washington.
                 </p>
+                {/* <br/>
+                <p >
+                  I'm an undergraduate
+                </p>
+                <br/>
+                <p>
+                  computer science student at the University of Washington.
+                </p> */}
 
                 <div id={styles['buttons-section']}>
                   <HomeButton name="Contact Me" link="/pages/contact"></HomeButton>

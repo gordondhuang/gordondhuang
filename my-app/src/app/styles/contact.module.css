@@ -1,5 +1,14 @@
 @import url('@/assets/fonts/satoshi/Fonts/WEB/css/satoshi.css');
 
+#contact-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: -2rem;
+}
+
 #contact-form-container {
     margin: 6rem;
     justify-content: center;
@@ -20,7 +29,48 @@
 }
 
 #form-container {
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* Styles for mobile devices (up to 767px wide) */
+@media screen and (max-width: 767px) {
+    #contact-main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        column-gap: 0.2rem;
+    }
+
+    #contact-form-container {
+        margin: 1rem;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+    }
+
+    #contact-header {
+        width: 100%;
+        text-align: center;
+        color: black;
+        font-family: Satoshi-Bold;
+        position: relative;
+        font-size: 2rem;
+        text-align: center;
+        letter-spacing: 0.25rem;
+        margin: 1rem 0 2rem 0;
+    }
+
+    #form-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* Styles for tablets and larger (768px and up) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
 }

@@ -8,13 +8,13 @@ by: Matheus Marsiglio
 #contact-form {
   font-family: Satoshi-Light;
   position: relative;
-  width: 470px;
+  width: 670px;
 }
 
-input {
+.contact-input {
   font-size: 0.875em;
-  width: 470px;
-  height: 50px;
+  width: 670px;
+  height: 70px;
   padding: 0px 15px 0px 15px;
   
   background: transparent;
@@ -30,16 +30,16 @@ input {
   -ms-transition: all 0.3s ease-in-out;
 }
 
-input:hover {
+.contact-input:hover {
   background: #d6d4d4;
   color: black;
 }
 
 textarea {
-  width: 470px;
-  max-width: 470px;
-  height: 110px;
-  max-height: 110px;
+  width: 670px;
+  height: 200px;
+  max-width: 670px;
+  max-height: 200px;
   padding: 15px;
   
   background: transparent;
@@ -59,7 +59,7 @@ textarea {
   display: block;
 }
 
-textarea:hover {
+#message:hover {
   background: #d6d4d4;
   color: black;
 }
@@ -67,7 +67,7 @@ textarea:hover {
 #submit {
   display: block;
   
-  width: 470px;
+  width: 670px;
   padding: 0;
   margin-top: 0;
   
@@ -155,4 +155,38 @@ input:hover::placeholder, textarea:hover::placeholder {
 
 input:hover:focus::-ms-placeholder, textarea:hover:focus::-ms-placeholder {
   color: #aca49c;
+}
+
+/* Styles for mobile devices (up to 767px wide) */
+@media screen and (max-width: 767px) {
+  #contact-form {
+    width: 300px;
+  }
+
+  .contact-input {
+    width: 300px;
+    height: 8vh;
+  }
+
+  .contact-input:hover {
+    background: #d6d4d4;
+    color: black;
+  }
+
+  #message {
+    width: 300px;
+    height: 130px;
+    max-width: 300px;
+    height: 8vh;
+  }
+
+  #submit {
+    width: 300px;
+    flex-shrink: 0;
+  }
+}
+
+/* Styles for tablets and larger (768px and up) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
 }
