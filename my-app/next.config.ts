@@ -5,15 +5,6 @@ const nextConfig: NextConfig = {
   output: 'export',
   images: { unoptimized: true },
   basePath: '',
-
-  async rewrites() {
-    return [
-      {
-        source: '/:path*',
-        destination: '/pages/:path*',
-      },
-    ]
-  }
 };
 
 
