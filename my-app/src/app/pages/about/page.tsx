@@ -112,12 +112,12 @@ export default function Page() {
                     desc={
                         <>
                             <p>
-                                My career has been a major focus throughtout my young adult years, where I mainly worked minimum wage jobs as a teenager.
+                                My career has been a major focus for me throughtout my young adult years, where I mainly worked minimum wage jobs as a teenager.
                                 These jobs taught me how to manage responsibilities and was where I acquired many of the soft skills I rely on. I started my journey 
                                 in the pursuit of software development as a junior year of high school student through a program called Launch-206 and landing an internship
                                 through a company that specializes in VR/AR called Simulated Immersive Experimental Realities. That was my first experience where
                                 I gained exposure to common real world work practices and leading a team. With impending deadlines, I received vital support from industry 
-                                professionals and developed a VR game using the Unity game engine that worked using the Oculus Quest 2.
+                                professionals and developed a VR game using the Unity game engine that was playable using the Oculus Quest 2.
                             </p>
                             <br/>
                             <p>

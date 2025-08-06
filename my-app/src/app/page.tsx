@@ -5,6 +5,7 @@ import { HomeButton } from './components/HomeButton';
 import { Subtitle } from './components/Subtitle';
 import { TimeLine } from './components/TimeLine';
 import { SkillSection } from './components/SkillSection';
+import { skills, certifications } from '@/app/utils/imgLists';
 
 export default function Page() {
   return (
@@ -19,11 +20,6 @@ export default function Page() {
                   <br/>
                   I'm an undergraduate computer science student at the University of Washington.
                 </p>
-
-
-                <p style={{color: "red", marginTop: "auto", fontSize:"1.6rem"}}>Still a W.I.P.</p>
-
-
 
                 <div id={styles['buttons-section']}>
                   <HomeButton name="Contact Me" link="/pages/contact"></HomeButton>
@@ -53,7 +49,7 @@ export default function Page() {
               <Subtitle name="Skills"/>
               <section>
                 <section id={styles['skills-list-container']}>
-                  <SkillSection/>
+                  <SkillSection skills={skills}/>
                 </section>
               </section>
             </section>
@@ -62,7 +58,7 @@ export default function Page() {
               <section>
                 <section>
                   <ul>
-                    {/* <SkillCard src="/images/unity-badge.png" alt="Unity"/> */}
+                    <SkillSection skills={certifications}/>
                   </ul>
                 </section>
               </section>

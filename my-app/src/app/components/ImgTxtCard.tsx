@@ -1,5 +1,6 @@
 import '@/app/styles/image-text.css';
 import Image from 'next/image';
+import { Subtitle } from './Subtitle';
 
 interface CardProps {
     img: React.ReactNode;
@@ -16,7 +17,7 @@ export function ImgTxtCard({ img, title, desc, isDefault }: CardProps) {
                 {img}
             </section>
             <section className="text-section text-right-section">
-                <h1 className="subtitle">{title}</h1>
+                <Subtitle name={title}/>
                 {desc}
             </section>
         </section>

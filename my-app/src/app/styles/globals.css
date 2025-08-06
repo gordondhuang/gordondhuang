@@ -10,19 +10,21 @@
   width: 100%;
   min-height: 100vh;
   overflow-x: hidden;
-  overflow-y: scroll;
+  overflow-y: auto;
   scrollbar-gutter: stable;
   font-family: Satoshi-Regular;
   scroll-behavior: smooth;
 }
 
-body{
+html, body{
   margin: 0;
   padding: 0;
   width: 100%;
+  height: 100%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  overscroll-behavior: contain;
 }
 
 main {
@@ -61,7 +63,6 @@ main {
 
 nav {
   width: 100%;
-  overflow: hidden;
   padding: 1.5rem;
 }
 
@@ -93,7 +94,6 @@ nav a:active {
 footer {
   width: 100%;
   height: 100%;
-  overflow: hidden;
   font-family: Satoshi-Light;
   bottom: 0;
 }

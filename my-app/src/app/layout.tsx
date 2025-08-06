@@ -3,6 +3,7 @@ import '@/app/styles/globals.css';
 import { Nav } from '@/app/components/Nav';
 import { Footer } from '@/app/components/Footer';
 import Script from 'next/script';
+import SmoothScroll from './components/SmoothScroll';
 
 export const metadata: Metadata = {
   title: {
@@ -31,6 +32,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
           <Nav/>
+          <SmoothScroll/>
             {children}
           <Footer/>
       </body>

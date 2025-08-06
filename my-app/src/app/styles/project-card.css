@@ -50,8 +50,8 @@
 
 .project-link:hover {
     cursor: pointer;
-    transform: scale(1.15);
-    transition: transform 0.5s ease-in-out;
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
 }
 
 .tag-list {
