@@ -1,0 +1,48 @@
+/* From Uiverse.io by cssbuttons-io */ 
+
+.home-button {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  padding: 0.7rem 2rem;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 6rem;
+  transition: all 0.2s;
+  border: none;
+  font-weight: 500;
+  color: black;
+  background-color: white;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.home-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.home-button:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.home-button::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+
+.home-button::after {
+  background-color: #fff;
+}
+
+.home-button:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}

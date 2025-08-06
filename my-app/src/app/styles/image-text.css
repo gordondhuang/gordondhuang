@@ -1,0 +1,57 @@
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    width: 100%;
+    min-height: 50rem;
+}
+
+.card.default {
+  flex-direction: row-reverse;
+}
+
+.image-section {
+    position: relative;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    aspect-ratio: 1 / 1;
+    width: 50rem;
+    height: 50rem;
+}
+
+.text-section {
+    flex: 1 1 auto; 
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: fit-content;
+    height: auto;
+    padding: 0 3rem 0 3rem;
+}
+
+.text-section h1 {
+    padding-bottom: 1rem;
+    width: fit-content;
+    height: fit-content;
+    font-size: 4rem;
+}
+
+.text-section p {
+    padding: 2rem, 2rem, 2rem, 0;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.subtitle {
+    text-indent: -0.25rem;
+}

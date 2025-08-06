@@ -1,0 +1,225 @@
+@import url('@/app/assets/fonts/satoshi/Fonts/WEB/css/satoshi.css');
+
+#intro-section {
+    position: relative;
+    margin: 5rem 10rem 5rem 10rem;
+}
+
+#intro-grid {
+    display: flex;
+    align-items: center;
+}
+
+#greeting-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 85vh;
+    flex: 1;
+    padding: 2rem;
+}
+
+#portrait-image-container {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+#greeting-header {
+    text-align: left;
+    font-size: 5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-family: Satoshi-Medium;
+    text-indent: -0.2rem;
+}
+
+#greeting-text {
+    text-align: left;
+    font-size: 2rem;
+}
+
+#portrait-image {
+    border-radius: 70px 100px 30px 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+#buttons-section {
+    margin-top: auto;
+    position: relative;
+    display: flex;
+    gap: 2rem;
+}
+
+#showcase-section {
+    width: 50rem;
+    margin: 0 auto;
+}
+
+#experiences {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+#skills {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+/* Styles for mobile devices (up to 767px wide) */
+@media screen and (max-width: 767px) {
+    #intro-section {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0.5rem;
+    }
+
+    #intro-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    #greeting-section {
+        display: flex;
+        height: 45vh;
+        width: inherit;
+        flex: 1;
+        padding: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #portrait-image-container {
+        width: inherit;
+        height: 100%;
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #greeting-header {
+        text-align: center;
+        position: relative;
+        font-size: 2rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-family: Satoshi-Medium;
+    }
+
+    #greeting-text {
+        text-align: center;
+        position: relative;
+        font-size: 1rem;
+    }
+
+    #portrait-image {
+        border-radius: 50px 50px 50px 50px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #buttons-section {
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+        flex-direction: column;
+    }
+
+    #showcase-section {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    #experiences {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    #skills {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+
+/* Styles for tablets and larger (768px and up) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    #intro-section {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0.5rem;
+    }
+
+    #intro-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    #greeting-section {
+        display: flex;
+        height: 45vh;
+        width: inherit;
+        flex: 1;
+        padding: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #portrait-image-container {
+        width: inherit;
+        height: 100%;
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #greeting-header {
+        text-align: center;
+        position: relative;
+        font-size: 2rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-family: Satoshi-Medium;
+    }
+
+    #greeting-text {
+        text-align: center;
+        position: relative;
+        font-size: 1rem;
+    }
+
+    #portrait-image {
+        border-radius: 50px 50px 50px 50px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #buttons-section {
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+        flex-direction: row;
+    }
+
+    #showcase-section {
+        width: 100%;
+        margin: 1rem 1rem 1rem 1rem;
+    }
+
+    #experiences {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    #skills {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+}
