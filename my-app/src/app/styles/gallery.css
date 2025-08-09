@@ -3,7 +3,7 @@
     flex-direction: column;
     width: 100%;
     scroll-behavior: smooth;
-    margin: 3rem 0 5rem 0;
+    margin: 1rem 0 5rem 0;
     gap: 0.2rem;
     cursor: pointer;
 }

@@ -20,7 +20,8 @@
 .text-container {
     display: flex;
     flex-direction: column;
-    overflow: hidden;
+    overflow-y: hidden;
+    overflow-x: visible;
 }
 
 .project-heading {
@@ -44,10 +45,6 @@
     margin-right: auto;
 }
 
-.project-link {
-
-}
-
 .project-link:hover {
     cursor: pointer;
     transform: scale(1.05);
@@ -59,10 +56,10 @@
     padding-bottom: 0.2rem;
     display: flex;
     gap: 0.5rem;
-    overflow-x: none;
     padding-left: 0.1rem;
     padding-right: 0.1rem;
     scrollbar-width: 2px;
+
 }
 
 .tag-list::-webkit-scrollbar {
@@ -75,6 +72,7 @@
     padding: 0.3rem;
     border-radius: 10%;
     box-shadow: 0 0 2px;
+    overflow-x: visible;
 }
 
 .tag-list li:hover {
@@ -85,6 +83,7 @@
 }
 
 .project-desc-container {
+    position: relative;
     height: 100%;
     overflow-y: auto;
 }
@@ -120,7 +119,6 @@
     .text-container {
         display: flex;
         flex-direction: column;
-        overflow: hidden;
     }
 
     .project-heading {

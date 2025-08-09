@@ -19,11 +19,7 @@ export default function SmoothScroll() {
             requestAnimationFrame(raf);
         };
         requestAnimationFrame(raf);
-
-        if (IntersectionObserver) {
-            lenis.resize();
-        }
-
+        
     }, []);
     return null;
 }

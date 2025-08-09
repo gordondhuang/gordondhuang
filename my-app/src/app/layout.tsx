@@ -32,12 +32,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        {/* <PageWrapper> */}
           <Nav/>
-          <SmoothScroll/>
-            {children}
+            <SmoothScroll/>
+            <PageWrapper>
+              {children}
+            </PageWrapper>
           <Footer/>
-        {/* </PageWrapper> */}
       </body>
     </html>
   );

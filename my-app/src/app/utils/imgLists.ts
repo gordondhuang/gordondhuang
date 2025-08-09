@@ -13,7 +13,9 @@ export const skills = [
     { src: "/images/skills/latex-original.svg", alt: "Latex"},
     { src: "/images/skills/sqlite-original.svg", alt: "SQLite"},
     { src: "/images/skills/nextjs-original.svg", alt: "NextJS"},
-    { src: "/images/skills/react-original.svg", alt: "ReactJS"}
+    { src: "/images/skills/nodejs-original.svg", alt: "NodeJS"},
+    { src: "/images/skills/react-original.svg", alt: "ReactJS"},
+    { src: "/images/skills/figma-original.svg", alt: "Figma"},
 ]
 
 export const certifications = [

@@ -10,9 +10,10 @@ export function TimeLine() {
                     header="University of Washington: Accesible Generative Design Tools"
                     dates="Jan 2025 - Present"
                     desc={[
-                        "Exploring and assessing the use cases for the disabled individuals and novice end users",
-                        "Implementing and developing a tool generator that utilizes a multi-agentic GAI fabrication system to produce outputs for users",
-                        "Evaluating the tool against other LLMs using qualitative and quantitative analysis for the user-specified metrics of both the interface and tool output"
+                        `Exploring and assessing the use cases for the disabled individuals and novice end users`,
+                        `Implementing and developing a tool generator that utilizes a multi-agentic GAI fabrication system to produce outputs for users`,
+                        `Evaluating the tool against other LLMs using qualitative and quantitative analysis for the user-specified metrics of both the 
+                         interface and tool output`
                     ]}
                 >
                 </TimeLineCard>
