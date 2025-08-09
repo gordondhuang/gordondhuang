@@ -3,7 +3,7 @@ import '@/styles/loading-skeleton.css'
 
 export function LoadingSkeleton() {
     return(
-        <section>
+        <section id="animation-frame">
             <Suspense fallback={<p>loading..</p>}/>
         </section>
     )

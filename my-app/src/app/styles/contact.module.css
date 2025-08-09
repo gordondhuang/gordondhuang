@@ -1,14 +1,5 @@
 @import url('@/assets/fonts/satoshi/Fonts/WEB/css/satoshi.css');
 
-#contact-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    margin: -2rem;
-}
-
 #contact-form-container {
     margin: 6rem;
     justify-content: center;

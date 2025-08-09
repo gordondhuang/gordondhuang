@@ -11,6 +11,7 @@ export default function SmoothScroll() {
             smoothWheel: true,
             infinite: false,
             // autoRaf: true,
+            autoResize: true
         });
 
         const raf = (time: number) => {
@@ -18,6 +19,11 @@ export default function SmoothScroll() {
             requestAnimationFrame(raf);
         };
         requestAnimationFrame(raf);
+
+        if (IntersectionObserver) {
+            lenis.resize();
+        }
+
     }, []);
     return null;
 }

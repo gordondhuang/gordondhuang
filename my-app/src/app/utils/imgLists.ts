@@ -19,3 +19,20 @@ export const skills = [
 export const certifications = [
     { src:"/images/unity-badge.png", alt:"Unity"},
 ]
+
+export const gallery = [
+    { src: "/images/gallery/tinycamera.JPG", alt: "tiny camera"},
+    { src: "/images/gallery/foodfestival.jpg", alt: "panda food festival"},
+    { src: "/images/gallery/ghibili.jpg", alt: "Ghibili Museum"},
+    { src: "/images/gallery/GLINT-Farewell.JPG", alt: "GLINT Summer Internship Program Farewell"},
+    { src: "/images/gallery/hakone1.jpg", alt: "Odawara Castle"},
+    { src: "/images/gallery/hakone2.jpg", alt: "Field near Odawara Castle"},
+    { src: "/images/gallery/kamakura.jpg", alt: "dog rock in Kamakura"},
+    { src: "/images/gallery/omega-mart.jpg", alt: "Omega Mart"},
+    { src: "/images/gallery/aquarium.jpg", alt:"Seattle Aquarium"},
+    { src: "/images/gallery/hiking1.jpg", alt: "Rattlesnake Ledge"},
+    { src: "/images/gallery/hiking2.jpg", alt: "Sunrise hike"},
+    { src: "/images/gallery/hiking3.jpg", alt: "Sunrise hike"},
+    { src: "/images/gallery/hiking4.jpg", alt: "Sunrise hike"},
+    { src: "/images/gallery/hiking5.jpg", alt: "Sunrise hike"},
+]

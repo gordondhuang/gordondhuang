@@ -82,8 +82,9 @@
     margin-bottom: 0.2rem;
 }
 
-.timeline-text p {
-    margin: 0;
+.desc-list {
+    list-style-position: inside;
+    list-style-type: disc;
 }
 
 /* Styles for mobile devices (up to 767px wide) */

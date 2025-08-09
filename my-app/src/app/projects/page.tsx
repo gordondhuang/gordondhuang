@@ -26,7 +26,7 @@ export default function Page() {
                                         This project was developed and showcased at DubHacks'23, where I assisted by leading a team of four students. 
                                         It was designed to be easy-to-use for tracking caffeine consumption and giving effective insights throughout a specific timelime. 
                                         By offering insights into caffeine intake history, Caf-Fiend empowers you to make informed choices about your health. 
-                                        We aimed to offer features like AR, AI, and user input to create an comprehensive management tool for users to take advantage of.
+                                        We aimed to offer features like AR, AI, and user input to create a comprehensive management tool for users to take advantage of.
                                         To stay informed, users would be able to track their caffeine consumption weekly, monthly, and yearly.
                                     </p>
                                     <br/>
@@ -88,7 +88,7 @@ export default function Page() {
                                         Developed as a fun side project and a way to optimize productivity as a student, this project was designed
                                         to extract crucial course information to be organized in a database such as an excel spreadsheet, Notion, and more.
                                         It currently extracts names, instructors, sections, and ids of courses that a student is taking. Certain courses and 
-                                        other key information may be extracted but is up to the user to modify the code using Canvas API documentation.
+                                        other key information may be extracted but it is up to the user to modify the code using Canvas API documentation.
                                     </p>
                                     <br/>
                                     <p>

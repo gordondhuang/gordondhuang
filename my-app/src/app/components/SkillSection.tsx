@@ -1,18 +1,10 @@
-import { SkillCard } from "./SkillCard";
+import { SkillCard } from './SkillCard';
+import { ImageProps } from '@/lib/definitions';
 
-type Skill = {
-    src: string;
-    alt: string;
-}
-
-type SkillProps = {
-    skills: Skill[];
-}
-
-export function SkillSection({skills}: SkillProps) {
+export function SkillSection({images}: ImageProps) {
     return (
         <ul id='skills-list'>
-            {skills.map((skill, i) => (
+            {images.map((skill, i) => (
                 <SkillCard
                     key={i}
                     src={skill.src}

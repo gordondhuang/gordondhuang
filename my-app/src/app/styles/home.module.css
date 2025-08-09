@@ -48,6 +48,7 @@
 }
 
 #buttons-section {
+    padding-top: 3rem;
     margin-top: auto;
     position: relative;
     display: flex;

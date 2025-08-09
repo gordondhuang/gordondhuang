@@ -3,6 +3,8 @@ import Link from "next/link";
 import styles from '@/styles/about.module.css';
 import { ImgTxtCard } from "@/components/ImgTxtCard";
 import { Subtitle } from "@/components/Subtitle";
+import { Gallery } from "@/components/Gallery";
+import { gallery } from "@/utils/imgLists";
 
 export default function Page() {
     return (
@@ -46,10 +48,9 @@ export default function Page() {
                             <br/>
                             <p>
                                 I'm currently actively pursuing a career as a software engineer and I am particularly interested in the fields of 
-                                artificial intelligence and machine learning. I'm open and looking for new roles and positions to 
+                                artificial intelligence and machine learning. I'm open to and looking for new roles and positions to 
                                 expand on my skill set and contribute to meaningful projects. After graduation, I hope to land an entry role where
-                                I can focus on refining my skills and expanding on the knowledge I obtained through my degree to further progress and 
-                                develop innovative technologies to benefit the world.
+                                I can focus on refining my skills and expanding on the knowledge I obtained through my degree. 
                             </p>
                         </>
                     }
@@ -91,7 +92,7 @@ export default function Page() {
                                 that I took were crucial to my professional development and the large emphasis placed on STEM propelled me forward in thinking
                                 about my future career goals. In connection with my first-generation college student background I made the decision to join 
                                 University of Washington's Upward Bound program, a college preparation program. Higher education was always something that my parents
-                                wanted for me, but this program and the positive influences that mentors had on me helped me realize that I wanted this too.
+                                had envisioned for me, but with the encouragement of mentors in this program I realized that I needed it for myself.
                                 I remained socially active as well, ocassionally joining in on discussions about civil service with the ACRS program. 
                                 Curiosity drove me to join two clubs, the Green Team club and my high school robotics, before the COVID-19 pandemic had put a stop to that.
                             </p>
@@ -103,7 +104,8 @@ export default function Page() {
                                 This is where I currently stand, a culmination of my past experiences and continued exploration of my interests. Many of the lessons
                                 that I learned and opportunities I had over the years are part of who I am and still influence my personal decisions and goals to this day. 
                                 For instance, my part as a board member in <Link href="https://gen1.cs.washington.edu/">GEN1</Link>, 
-                                a registered student organization dedicated to uplifting first generation college students. 
+                                a registered student organization dedicated to uplifting first generation college students. I'm currently also involved in undergraduate
+                                research, where I'm working on a multi-agentic GAI fabrication system.
                             </p> 
                         </>
                     }
@@ -138,10 +140,10 @@ export default function Page() {
                             <br/>
                             <p>
                                 My most recent internship was the most unique experience I have ever had, a study abroad internship at a start-up tech company in Tokyo, Japan! 
-                                Interning in the center of one of the largest cities in the world in a completely different culture than that of which I am normally used to was
-                                a major shift in environment and cultural norms. It offered me a fresh perspective on working outside of the city that I grew up in and immersed me in an environment
-                                I had never been in before. Applying to this program was terrifying for me, as I knew no one and had no friends going into this program. I built many
-                                connections and made strides toward my personal and professional growth.   
+                                Interning in the center of one of the largest cities in the world in a vastly different culture than that of which I am normally used to was
+                                a major shift culturally. It offered me a fresh perspective on working outside of the city that I grew up in and challenged
+                                me to adapt quickly. Applying to this program was terrifying for me, as I knew no one and had no friends going into this program. However, 
+                                by the end of this internship I built many connections and friendships which helped me make strides towards my personal and professional growth.   
                             </p>
                         </>
                     }
@@ -170,7 +172,7 @@ export default function Page() {
                             <p>
                                 I have some hobbies that I used to enjoy but may not do as much of currently. Reading is something that I used to do a lot of and enjoy as 
                                 a kid, typically I would read a book for an hour or two every night before I slept. Another activity I used to do as a kid is swimming, I used
-                                to take swimming lessons as a kid. I don't enjoy bouldering as much as my friends did but I would go with them and have fun nonetheless. 
+                                to take swimming lessons. I don't enjoy bouldering as much as my friends do but I would go with them and have fun nonetheless. 
                             </p>
                             <br/>
                             <p>
@@ -183,14 +185,21 @@ export default function Page() {
                     isDefault={false}
                 />
             </section>
-            <section id={styles["values-section"]}>
+            {/* <section id={styles["values-section"]}>
                 <section>
                     <Subtitle name="Values"/>
                 </section>
-            </section>
+            </section> */}
             <section id={styles["gallery-section"]}>
                 <section>
-                    <Subtitle name="Gallery"/>
+                    <Subtitle 
+                        name="Photo Gallery"
+                        style={{
+                            textAlign:"center",
+                            margin: "auto"
+                        }}
+                    />
+                    <Gallery images={gallery}/>
                 </section>
             </section>
         </>

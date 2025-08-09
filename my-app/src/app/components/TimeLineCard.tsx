@@ -7,7 +7,7 @@ interface CardProps {
     role: string;
     header: string;
     dates: string;
-    desc: string;
+    desc: string[];
 }
 
 
@@ -45,7 +45,15 @@ export const TimeLineCard = ({role, header, dates, desc}: CardProps) => {
             >
                 <h1>{header}</h1>
                 <small>{dates}</small>
-                <p>{desc}</p>
+                <ul className="desc-list">
+                    {desc.map((item, i) => (
+                        <li 
+                            key={i}
+                        >
+                            {item}
+                        </li>
+                    ))}
+                </ul>
             </section>
         </section>
     );

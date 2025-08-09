@@ -21,17 +21,8 @@ export default function Page() {
                   I'm an undergraduate computer science student 
                   at the University of Washington.
                 </p>
-                {/* <br/>
-                <p >
-                  I'm an undergraduate
-                </p>
-                <br/>
-                <p>
-                  computer science student at the University of Washington.
-                </p> */}
-
                 <div id={styles['buttons-section']}>
-                  <HomeButton name="Contact Me" link="/pages/contact"></HomeButton>
+                  <HomeButton name="Contact Me" link="/contact"></HomeButton>
                   <HomeButton name="Download CV" link="/Huang_Gordon.pdf" file="Huang_Gordon.pdf"></HomeButton>
                 </div>
               </section>
@@ -58,7 +49,7 @@ export default function Page() {
               <Subtitle name="Skills"/>
               <section>
                 <section id={styles['skills-list-container']}>
-                  <SkillSection skills={skills}/>
+                  <SkillSection images={skills}/>
                 </section>
               </section>
             </section>
@@ -67,7 +58,7 @@ export default function Page() {
               <section>
                 <section>
                   <ul>
-                    <SkillSection skills={certifications}/>
+                    <SkillSection images={certifications}/>
                   </ul>
                 </section>
               </section>
