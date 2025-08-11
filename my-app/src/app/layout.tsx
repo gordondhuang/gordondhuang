@@ -4,7 +4,6 @@ import { Nav } from '@/components/Nav';
 import { Footer } from '@/components/Footer';
 import Script from 'next/script';
 import SmoothScroll from './components/SmoothScroll';
-import PageWrapper from './components/PageWrapper';
 
 export const metadata: Metadata = {
   title: {
@@ -34,9 +33,7 @@ export default function RootLayout({
       <body>
           <Nav/>
             <SmoothScroll/>
-            <PageWrapper>
               {children}
-            </PageWrapper>
           <Footer/>
       </body>
     </html>

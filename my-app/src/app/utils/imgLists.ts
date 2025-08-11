@@ -31,7 +31,7 @@ export const gallery = [
     { src: "/images/gallery/hakone2.jpg", alt: "Field near Odawara Castle"},
     { src: "/images/gallery/kamakura.jpg", alt: "dog rock in Kamakura"},
     { src: "/images/gallery/omega-mart.jpg", alt: "Omega Mart"},
-    { src: "/images/gallery/aquarium.jpg", alt:"Seattle Aquarium"},
+    { src: "/images/gallery/aquarium.jpg", alt: "Seattle Aquarium"},
     { src: "/images/gallery/hiking1.jpg", alt: "Rattlesnake Ledge"},
     { src: "/images/gallery/hiking2.jpg", alt: "Sunrise hike"},
     { src: "/images/gallery/hiking3.jpg", alt: "Sunrise hike"},

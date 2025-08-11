@@ -1,7 +1,11 @@
+'use client';
+
 import Image from "next/image";
 import { gallery } from '@/utils/imgLists';
 import { ImageProps } from '@/lib/definitions';
 import '@/styles/gallery.css';
+import { DragScroll } from "@/utils/dragScroll";
+import { ImageCarousel } from "./ImageCarousel";
 
 export function Gallery({images}:ImageProps) {
 
@@ -9,36 +13,12 @@ export function Gallery({images}:ImageProps) {
     const firstRow = images.slice(0, mid);
     const secondRow = images.slice(mid);
 
+    const firstRowRef = DragScroll<HTMLDivElement>();
+    const secondRowRef = DragScroll<HTMLDivElement>();
     return(
         <section id="gallery">
-                <section className="gallery-row">
-                    {firstRow.map((image, i) => (
-                        <section key={i} className="gallery-image-wrapper">
-                            <Image
-                                key={i}
-                                src={image.src}
-                                alt={image.alt}
-                                width={200}
-                                height={200}
-                                className="gallery-image"
-                            />
-                        </section>
-                    ))}
-                </section>
-                <section className="gallery-row">
-                    {secondRow.map((image, i) => (
-                        <section key={i} className="gallery-image-wrapper">
-                            <Image
-                                key={i}
-                                src={image.src}
-                                alt={image.alt}
-                                width={200}
-                                height={200}
-                                className="gallery-image"
-                            />
-                        </section>
-                    ))}
-                </section>
+            <ImageCarousel images={firstRow} rowRef={firstRowRef}/>
+            <ImageCarousel images={secondRow} rowRef={secondRowRef}/>
         </section>
     );
 }

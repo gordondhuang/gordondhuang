@@ -20,8 +20,12 @@
     height: 25rem;
     max-width: 100%;
 
-    overflow-x: auto;
+    overflow-x: scroll;
     scrollbar-width: none;
+}
+
+.gallery-row:active {
+    cursor: grabbing
 }
 
 .gallery-image-wrapper {

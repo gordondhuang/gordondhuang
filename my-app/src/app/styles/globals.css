@@ -98,6 +98,7 @@ nav a:active {
 }
 
 footer {
+  margin-top: auto;
   width: 100%;
   font-family: Satoshi-Light;
   flex-shrink: 0;
