@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   authors: [{ name: 'Gordon Huang' }],
   creator: 'Gordon Huang',
   publisher: 'Gordon Huang',
-  metadataBase: new URL('https://gordondhuang.me/')
+  metadataBase: new URL('https://gordondhuang.me/'),
 };
 
 export const viewport: Viewport = {
@@ -29,11 +29,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html>
       <body>
           <Nav/>
             <SmoothScroll/>
-              {children}
+            {children}
           <Footer/>
       </body>
     </html>

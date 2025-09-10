@@ -13,7 +13,6 @@
   overflow-y: auto;
   scrollbar-gutter: stable;
   font-family: Satoshi-Regular;
-  scroll-behavior: smooth;
 }
 
 html, body{

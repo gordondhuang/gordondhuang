@@ -4,16 +4,16 @@ import Link from 'next/link';
 import React, { useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 
-export function ScrollNavBtn({ text, id }: { text: string, id: string }) {
+export function ScrollNavBtn({ text, scrollId }: { text: string, scrollId: string }) {
     const pathname = usePathname();
 
     // scroll to section on click
     const handleClick = (event: React.MouseEvent) => {
         if (pathname === '/') {
             event.preventDefault();
-            scrollToSection(id);
+            scrollToSection(scrollId);
         } else {
-            localStorage.setItem('scrollTargetId', id);
+            localStorage.setItem('scrollTargetId', scrollId);
         }
     };
 
@@ -24,7 +24,12 @@ export function ScrollNavBtn({ text, id }: { text: string, id: string }) {
             if (scrollTarget) {
                 localStorage.removeItem('scrollTargetId');
                 setTimeout(() => {
-                    scrollToSection(scrollTarget);
+                    const targetElement = document.getElementById(scrollTarget || '');
+                    targetElement?.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start',
+                        inline: 'nearest',
+                    });
                 }, 100);
             }
         }
@@ -39,8 +44,8 @@ export function ScrollNavBtn({ text, id }: { text: string, id: string }) {
     );
 }
 
-function scrollToSection(id: string) {
-    const element = document.getElementById(id);
+function scrollToSection(scrollId: string) {
+    const element = document.getElementById(scrollId);
     if (element) {
         element.scrollIntoView({ 
             behavior: 'smooth',
@@ -48,6 +53,6 @@ function scrollToSection(id: string) {
             inline: 'nearest' 
         })
     } else {
-        console.warn(`No element with "${id}" found!`);
+        console.warn(`No element with "${scrollId}" found!`);
     }
 }

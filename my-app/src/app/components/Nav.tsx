@@ -1,6 +1,7 @@
 import '@/styles/globals.css';
 import Link from 'next/link';
 import { ScrollNavBtn } from './ScrollNavBtn';
+// import { useRef } from 'react';
 
 export function Nav() {
     return (
@@ -14,7 +15,7 @@ export function Nav() {
               <Link href='/about'>About</Link>
             </li>
             <li>
-              <ScrollNavBtn text="Experience" id="home-module__CAdaBa__experiences"/>
+              <ScrollNavBtn text="Experience" scrollId="experiences"/>
             </li>
             <li>
               <Link href='/projects'>Projects</Link>

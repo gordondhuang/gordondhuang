@@ -41,7 +41,7 @@ export default function Page() {
             <section>
               <Subtitle name="Featured"/>
             </section>
-            <section id={styles['experiences']}>
+            <section id="experiences">
               <Subtitle name="Experience"/>
               <TimeLine/>
             </section>

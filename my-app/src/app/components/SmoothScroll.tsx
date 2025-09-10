@@ -14,12 +14,18 @@ export default function SmoothScroll() {
             autoResize: true
         });
 
+        let frame: number;
         const raf = (time: number) => {
             lenis.raf(time);
-            requestAnimationFrame(raf);
+            frame = requestAnimationFrame(raf);
         };
-        requestAnimationFrame(raf);
+        frame = requestAnimationFrame(raf);
         
+        return () => {
+            cancelAnimationFrame(frame);
+            lenis.destroy();
+        };
+
     }, []);
     return null;
 }
