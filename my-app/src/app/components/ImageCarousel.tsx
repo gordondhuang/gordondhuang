@@ -2,9 +2,8 @@
 
 import NextImage  from "next/image";
 import type { Image } from '@/lib/definitions';
-import { motion, animate, useMotionValue } from 'framer-motion';
-import { useEffect } from 'react';
-import useMeasure from 'react-use-measure';
+import { motion, useAnimationFrame } from 'framer-motion';
+import { useState } from 'react';
 import { RefObject } from "react";
 
 type CarouselProps = {
@@ -13,46 +12,34 @@ type CarouselProps = {
 }
 
 export function ImageCarousel({ images, rowRef }: CarouselProps) {
+    // const [x, setX] = useState(0);
+    // const speed = 1;
 
-    // let imageLoop = [...images, ...images]
-    // let [animationRef, { width }] = useMeasure();
-    // const xTranslate = useMotionValue(0);
-
-    // useEffect(() => {
-
-    //     if (width === 0) return;
-
-    //     let controls;
-    //     let finalPos = width / 2 - 8;
-        
-    //     controls = animate(xTranslate, [0, finalPos], {
-    //         ease: "linear",
-    //         duration: 25,
-    //         repeat: Infinity,
-    //         repeatType: "loop",
-    //         repeatDelay: 0,
-    //     });
-
-    //     return controls.stop;
+    // useAnimationFrame(() => {
+    //     setX(prevX => prevX - speed);
     // });
 
     return (
         <>
-            <section className="gallery-row" ref={rowRef}>
-                {images.map((image, i) => (
-                    <section key={i} className="gallery-image-wrapper">
-                        <NextImage
-                            key={i}
-                            src={image.src}
-                            alt={image.alt}
-                            width={200}
-                            height={200}
-                            className="gallery-image"
-                            draggable={false}
-                        />
-                    </section>
-                ))}
-            </section>
+            <div className="gallery-row" ref={rowRef}>
+                    {[...images, ...images, ...images].map((image, i) => (
+                        <motion.section 
+                            key={i} 
+                            className="gallery-image-wrapper"
+                            // style={{ x }}
+                        >
+                            <NextImage
+                                key={i}
+                                src={image.src}
+                                alt={image.alt}
+                                width={200}
+                                height={200}
+                                className="gallery-image"
+                                draggable={false}
+                            />
+                        </motion.section>
+                    ))}
+            </div>
         </>
     );
 }

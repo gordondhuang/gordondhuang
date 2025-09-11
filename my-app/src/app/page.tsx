@@ -6,6 +6,7 @@ import { Subtitle } from './components/Subtitle';
 import { TimeLine } from './components/TimeLine';
 import { SkillSection } from './components/SkillSection';
 import { skills, certifications } from '@/utils/imgLists';
+import { ImgTxtCard } from "@/components/ImgTxtCard";
 
 export default function Page() {
   return (
@@ -37,10 +38,27 @@ export default function Page() {
               </figure>
             </section>
           </section>
+          {/* <section id={styles['featured-section']}>
+            <Subtitle name="Featured"/>
+            <ImgTxtCard
+                  img={<Image 
+                          src="/images/space_needle_rail.JPG" 
+                          alt="space needle image"
+                          fill
+                          priority
+                          id={styles["space_needle"]}
+                      />}
+                  desc={
+                      <>
+                          <p>
+                            test
+                          </p>
+                      </>
+                  }
+                  isDefault={true}
+              />
+          </section> */}
           <section id={styles['showcase-section']}>
-            <section>
-              <Subtitle name="Featured"/>
-            </section>
             <section id="experiences">
               <Subtitle name="Experience"/>
               <TimeLine/>

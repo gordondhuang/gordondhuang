@@ -1,13 +1,12 @@
 'use client';
 
 import Image from "next/image";
-import { gallery } from '@/utils/imgLists';
 import { ImageProps } from '@/lib/definitions';
 import '@/styles/gallery.css';
 import { DragScroll } from "@/utils/dragScroll";
 import { ImageCarousel } from "./ImageCarousel";
 
-export function Gallery({images}:ImageProps) {
+export function Gallery({ images }:ImageProps) {
 
     const mid = Math.ceil(images.length / 2);
     const firstRow = images.slice(0, mid);

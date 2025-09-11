@@ -5,10 +5,12 @@ import { ImgTxtCard } from "@/components/ImgTxtCard";
 import { Subtitle } from "@/components/Subtitle";
 import { Gallery } from "@/components/Gallery";
 import { gallery } from "@/utils/imgLists";
+import Loading from "@/components/Loading";
 
 export default function Page() {
     return (
         <>
+            <Loading />
             <section id={styles["main-section"]}>
                 <Subtitle name="Hello World." 
                     style={{

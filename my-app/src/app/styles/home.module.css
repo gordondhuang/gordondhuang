@@ -55,6 +55,11 @@
     gap: 2rem;
 }
 
+#featured-section {
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
 #showcase-section {
     width: 50rem;
     margin: 0 auto;

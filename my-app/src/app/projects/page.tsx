@@ -1,10 +1,12 @@
 import { ProjectCard } from '@/components/ProjectCard';
 import styles from '@/styles/projects.module.css';
 import { Subtitle } from '@/components/Subtitle';
+import Loading from '@/components/Loading';
 
 export default function Page() {
     return (
         <>
+            <Loading />
             <section>
                 <section id={styles["project-section"]}>
                     <Subtitle name="What I've Built"/>
