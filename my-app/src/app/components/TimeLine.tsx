@@ -1,7 +1,8 @@
+'use client';
 import '@/styles/time-line.css';
 import { TimeLineCard } from './TimeLineCard';
 
-export function TimeLine() {
+export default function TimeLine() {
     return (
         <section id="timeline">
             <section className="card-section">

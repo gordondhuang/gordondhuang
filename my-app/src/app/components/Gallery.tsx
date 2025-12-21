@@ -6,7 +6,7 @@ import '@/styles/gallery.css';
 import { DragScroll } from "@/utils/dragScroll";
 import { ImageCarousel } from "./ImageCarousel";
 
-export function Gallery({ images }:ImageProps) {
+export default function Gallery({ images }:ImageProps) {
 
     const mid = Math.ceil(images.length / 2);
     const firstRow = images.slice(0, mid);

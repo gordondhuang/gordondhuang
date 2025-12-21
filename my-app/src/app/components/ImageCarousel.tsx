@@ -36,6 +36,7 @@ export function ImageCarousel({ images, rowRef }: CarouselProps) {
                                 height={200}
                                 className="gallery-image"
                                 draggable={false}
+                                loading="lazy"
                             />
                         </motion.section>
                     ))}

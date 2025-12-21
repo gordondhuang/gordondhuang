@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import styles from '@/styles/about.module.css';
-import { ImgTxtCard } from "@/components/ImgTxtCard";
+import ImgTxtCard from "@/components/ImgTxtCard";
 import { Subtitle } from "@/components/Subtitle";
-import { Gallery } from "@/components/Gallery";
+import Gallery from "@/components/Gallery";
 import { gallery } from "@/utils/imgLists";
 import Loading from "@/components/Loading";
 
@@ -12,7 +12,7 @@ export default function Page() {
         <>
             <Loading />
             <section id={styles["main-section"]}>
-                <Subtitle name="Hello World." 
+                <Subtitle name="My History In Bytes" 
                     style={{
                         fontSize: '6rem',
                         paddingTop: '4rem',

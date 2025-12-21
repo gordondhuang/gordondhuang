@@ -1,9 +1,9 @@
 import { Metadata, Viewport } from 'next';
 import '@/styles/globals.css';
-import { Nav } from '@/components/Nav';
+import Nav from './components/Nav';
+import SmoothScroll from './components/SmoothScroll';
 import { Footer } from '@/components/Footer';
 import Script from 'next/script';
-import SmoothScroll from './components/SmoothScroll';
 
 export const metadata: Metadata = {
   title: {

@@ -20,6 +20,8 @@ export const skills = [
 
 export const certifications = [
     { src:"/images/unity-badge.png", alt:"Unity"},
+    { src:"/images/aws-gai-badge.png", alt:"AWS"},
+    { src:"/images/aws-cc101-badge.png", alt:"AWS"},
 ]
 
 export const gallery = [

@@ -3,10 +3,10 @@ import styles from '@/styles/home.module.css';
 import '@/styles/animations.css';
 import { HomeButton } from './components/HomeButton';
 import { Subtitle } from './components/Subtitle';
-import { TimeLine } from './components/TimeLine';
+import TimeLine from './components/TimeLine';
 import { SkillSection } from './components/SkillSection';
 import { skills, certifications } from '@/utils/imgLists';
-import { ImgTxtCard } from "@/components/ImgTxtCard";
+import ImgTxtCard from "@/components/ImgTxtCard";
 
 export default function Page() {
   return (

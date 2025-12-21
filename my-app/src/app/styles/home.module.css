@@ -28,7 +28,7 @@
 
 #greeting-header {
     text-align: left;
-    font-size: 6rem;
+    font-size: clamp(1.5rem, 4vw, 6rem);
     margin-top: 2rem;
     margin-bottom: 2rem;
     font-family: Satoshi-Medium;
@@ -37,7 +37,7 @@
 
 #greeting-text {
     text-align: left;
-    font-size: 2.3rem;
+    font-size: clamp(0.5rem, 4vw, 2rem);
     line-height: 1.6;
 }
 

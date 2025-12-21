@@ -29,15 +29,25 @@
 }
 
 .text-section {
-    flex: 1 1 auto; 
+    flex: 0 0 50rem;
     min-height: 0;
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    width: fit-content;
     height: auto;
-    padding: 0 3rem 0 3rem;
+
+    margin-left: auto;
+    padding-left: 3rem;
+    padding-right: 0;
 }
+
+.card.default .text-section {
+    margin-left: 0;
+    margin-right: auto;
+    padding-left: 0;
+    padding-right: 3rem;
+}
+
 
 .text-section h1 {
     padding-bottom: 1rem;

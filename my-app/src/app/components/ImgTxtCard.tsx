@@ -1,3 +1,4 @@
+'use client';
 import '@/styles/image-text.css';
 import Image from 'next/image';
 import { Subtitle } from './Subtitle';
@@ -10,7 +11,7 @@ interface CardProps {
 }
 
 
-export function ImgTxtCard({ img, title, desc, isDefault }: CardProps) {
+export default function ImgTxtCard({ img, title, desc, isDefault }: CardProps) {
     if (title) {
         return (
             <section className={`card ${!isDefault ? "default" : ""}`}>
