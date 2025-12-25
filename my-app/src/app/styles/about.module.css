@@ -1,6 +1,6 @@
 #main-section {
     margin-left: 10vw;    
-    margin-right: 10vw;    
+    margin-right: 10vw;
 }
 
 .image-section :global(img) {
@@ -20,7 +20,7 @@
 
 #gen1 {
     width: 45rem;
-    height: 25rem;
+    height: 45rem;
     margin: 0 auto;
     clip-path: polygon(0% 10%, 100% 10%, 100% 90%, 0% 90%);
 }
@@ -36,6 +36,7 @@
     width: 50rem !important;
     height: 40rem !important;
     margin: auto;
+    border-radius: 5%;
 }
 
 .about-links {

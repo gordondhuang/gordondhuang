@@ -11,9 +11,11 @@ export default function TimeLine() {
                     header="University of Washington: Accesible Generative Design Tools"
                     dates="Jan 2025 - Present"
                     desc={[
-                        `Exploring and assessing the use cases for the disabled individuals and novice end users`,
-                        `Implementing and developing a tool generator that utilizes a multi-agentic GAI fabrication system to produce outputs for users`,
-                        `Evaluating the tool against other LLMs using qualitative and quantitative analysis for the user-specified metrics of both the 
+                        `Exploring and assessing fabrication workflow use cases for fabrication generated through AI for disabled individuals and
+                         novice end users`,
+                        `Implementing Python-based tool generator using LangGraph that utilizes a multi-agent GAI fabrication system to produce
+                         design tools for users`,
+                        `Evaluating the tool against other LLMs using qualitative and quantitative analysis for the user-specified metrics of both the
                          interface and tool output`
                     ]}
                 >
@@ -47,8 +49,7 @@ export default function TimeLine() {
                     desc={[
                         `Rehearsed and completed the Unity Program Certification Exam to become a Unity Certified User: Programmer`,
                         `Instructed and guided two team members on C# programming and navigating the Unity game engine.`,
-                        `Iterated and developed versions of a C#-based virtual reality game on Unity that implemented solutions for the
-                        company`
+                        `Iterated and developed versions of a C#-based virtual reality game on Unity that implemented self-sustaining island modules solutions`
                     ]}
                 >
                 </TimeLineCard>

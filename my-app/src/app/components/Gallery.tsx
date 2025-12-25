@@ -6,7 +6,7 @@ import '@/styles/gallery.css';
 import { DragScroll } from "@/utils/dragScroll";
 import { ImageCarousel } from "./ImageCarousel";
 
-export default function Gallery({ images }:ImageProps) {
+export default function Gallery({ images }: ImageProps) {
 
     const mid = Math.ceil(images.length / 2);
     const firstRow = images.slice(0, mid);
@@ -16,8 +16,8 @@ export default function Gallery({ images }:ImageProps) {
     const secondRowRef = DragScroll<HTMLDivElement>();
     return(
         <section id="gallery">
-            <ImageCarousel images={firstRow} rowRef={firstRowRef}/>
-            <ImageCarousel images={secondRow} rowRef={secondRowRef}/>
+            <ImageCarousel images={firstRow} rowRef={firstRowRef} direction={'left'}/>
+            <ImageCarousel images={secondRow} rowRef={secondRowRef} direction={'right'}/>
         </section>
     );
 }

@@ -1,10 +1,10 @@
 export type Image = {
-    src: string;
-    alt: string;
+  src: string;
+  alt: string;
 }
 
 export type ImageProps = {
-    images: Image[];
+  images: Image[];
 }
 
 export type SkeletonCardProps = {

@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from "next/link";
 import styles from '@/styles/home.module.css';
 import '@/styles/animations.css';
 import { HomeButton } from './components/HomeButton';
@@ -17,10 +18,13 @@ export default function Page() {
               <section id={styles['greeting-section']}>
                 <h1 id={styles['greeting-header']} className='fadeLeft'>Hello, I'm Gordon</h1>
                 <p id={styles['greeting-text']} className='fadeUp'>
-                  Welcome to my portfolio!
+                  
                   <br/>
-                  I'm an undergraduate computer science student 
-                  at the University of Washington.
+                  An undergraduate computer science student 
+                  at the University of Washington. I am currently a researcher 
+                  in the <Link href="https://make4all.org/">Make4All</Link> lab studying multi-agent fabrication 
+                  and serve as the treasurer of <Link href="https://gen1.cs.washington.edu/home">GEN1</Link>, supporting 
+                  first-generation computer science college students.
                 </p>
                 <div id={styles['buttons-section']}>
                   <HomeButton name="Contact Me" link="/contact"></HomeButton>
@@ -33,6 +37,7 @@ export default function Page() {
                   alt="portrait image"
                   width={500} 
                   height={600}
+                  priority
                   id={styles['portrait-image']}
                 />
               </figure>

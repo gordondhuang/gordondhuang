@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     default: 'Gordon Huang'
   },
   description: 'Welcome to my website!',
-  keywords: 'portfolio, computer science, university of washington, researcher, student, software engineer',
+  keywords: 'portfolio, computer science, university of washington, researcher, student, software engineer, generative ai',
   authors: [{ name: 'Gordon Huang' }],
   creator: 'Gordon Huang',
   publisher: 'Gordon Huang',
@@ -29,7 +29,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html>
+    <html lang="en">
       <body>
           <Nav/>
             <SmoothScroll/>

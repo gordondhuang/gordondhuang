@@ -12,7 +12,7 @@ export default function Page() {
         <>
             <Loading />
             <section id={styles["main-section"]}>
-                <Subtitle name="My History In Bytes" 
+                <Subtitle name="My Life In Bytes" 
                     style={{
                         fontSize: '6rem',
                         paddingTop: '4rem',
@@ -25,7 +25,8 @@ export default function Page() {
                     img={<Image 
                             src="/images/space_needle_rail.JPG" 
                             alt="space needle image"
-                            fill
+                            width={1200}
+                            height={800}
                             priority
                             id={styles["space_needle"]}
                         />}
@@ -62,8 +63,8 @@ export default function Page() {
                     img={<Image
                             src="/images/gen1.JPG" 
                             alt="GEN1 UW Registered Student Organization"
-                            fill
-                            priority
+                            width={1200}
+                            height={800}
                             id={styles["gen1"]}
                         />}
                     title="Education🎓"
@@ -105,7 +106,7 @@ export default function Page() {
                                 University of Washington's Paul G. Allen School of Computer Science & Engineering</Link>.
                                 This is where I currently stand, a culmination of my past experiences and continued exploration of my interests. Many of the lessons
                                 that I learned and opportunities I had over the years are part of who I am and still influence my personal decisions and goals to this day. 
-                                For instance, my part as a board member in <Link href="https://gen1.cs.washington.edu/">GEN1</Link>, 
+                                For instance, my part as a board member in <Link href="https://gen1.cs.washington.edu/" className={styles["about-links"]}>GEN1</Link>, 
                                 a registered student organization dedicated to uplifting first generation college students. I'm currently also involved in undergraduate
                                 research, where I'm working on a multi-agentic GAI fabrication system.
                             </p> 
@@ -117,8 +118,9 @@ export default function Page() {
                     img={<Image
                             src="/images/globaldeel.jpg" 
                             alt="GlobalDeel"
-                            fill
-                            priority
+                            width={1200}
+                            height={800}
+                            
                             id={styles["globaldeel"]}
                         />}
                     title="Work Experience💼"
@@ -155,8 +157,8 @@ export default function Page() {
                     img={<Image
                             src="/images/rattlesnake.jpg" 
                             alt="Rattlesnake Ledge"
-                            fill
-                            priority
+                            width={1200}
+                            height={800}
                             id={styles["rattlesnake"]}
                         />}
                     title="Hobbies🏸"
